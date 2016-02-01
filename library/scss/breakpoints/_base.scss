@@ -161,6 +161,7 @@ HEADER STYLES
 .article-header{
 	font-weight: $semi-bold;
 	@include font-size(14px);
+	margin: 10px 0 40px;
 	
 	#breadcrumbs{
 		border-top: 1px dotted $saltpan;
@@ -756,19 +757,30 @@ SIDEBARS & ASIDES
 
 .sidebar {}
 
-	.widgettitle {}
+	.widgettitle {
+		font-weight: $semi-bold;
+		border-top: 6px solid $saltpan;
+		text-transform: uppercase;
+	}
 
 	.widget {
 
+		
 		ul {
-
+			
 			li {
-
+				list-style-type: none;
+				margin-bottom: 1.3em;
+				line-height: 1.3;
+				padding-bottom: 10px;
+				
 				&:first-child {}
 
 				&:last-child {}
 
-				a {}
+				a {
+					color: $sirocco;
+				}
 
 				/* deep nesting */
 				ul {}
@@ -779,6 +791,27 @@ SIDEBARS & ASIDES
 
 	}
 
+	.widget_search{
+		border: 1px solid darken($saltpan, 5%);
+		padding: 20px 20px 30px 15px;
+		margin-bottom: 20px;
+		
+		label{
+			font-weight: $semi-bold;
+			text-transform: uppercase;
+		}
+		
+		input{
+			width: 226px;
+			margin-top: 10px;
+		}
+		.btn__green{
+			width: 100%;
+			padding: 2px;
+			@include font-size(12px);
+			border: 2px solid $downy;
+		}
+	}
 	.no-widgets {
 		background-color: $white;
 		padding: 1.5em;
