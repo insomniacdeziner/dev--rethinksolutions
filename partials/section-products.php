@@ -27,8 +27,10 @@
 							<div class="product--content">
 								<a name="section1"></a>
 								<span class="title--border"></span>
-								<h2><?php the_sub_field('section_one'); ?></h2>
-								<?php the_sub_field('section_one_content'); ?>
+								<h2 class="product--title"><?php the_sub_field('section_one'); ?></h2>
+								<div class="copy">
+									<?php the_sub_field('section_one_content'); ?>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -41,8 +43,10 @@
 							<div class="product--content">
 								<a name="section2"></a>
 								<span class="title--border"></span>
-								<h2><?php the_sub_field('section_two'); ?></h2>
-								<?php the_sub_field('section_two_content'); ?>
+								<h2 class="product--title"><?php the_sub_field('section_two'); ?></h2>
+								<div class="copy">
+									<?php the_sub_field('section_two_content'); ?>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -55,8 +59,10 @@
 							<div class="product--content">
 								<a name="section3"></a>
 								<span class="title--border"></span>
-								<h2><?php the_sub_field('section_three'); ?></h2>
-								<?php the_sub_field('section_three_content'); ?>
+								<h2 class="product--title"><?php the_sub_field('section_three'); ?></h2>
+								<div class="copy">
+									<?php the_sub_field('section_three_content'); ?>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -69,8 +75,10 @@
 							<div class="product--content">
 								<a name="section4"></a>
 								<span class="title--border"></span>
-								<h2><?php the_sub_field('section_four'); ?></h2>
-								<?php the_sub_field('section_four_content'); ?>
+								<h2 class="product--title"><?php the_sub_field('section_four'); ?></h2>
+								<div class="copy">
+									<?php the_sub_field('section_four_content'); ?>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -97,8 +105,10 @@
 						<div class="product--content">
 							<a name="section5"></a>
 							<span class="title--border"></span>
-							<h2><?php the_sub_field('section_one_right'); ?></h2>
-							<?php the_sub_field('right_side_section_one_content'); ?>
+							<h2 class="product--title"><?php the_sub_field('section_one_right'); ?></h2>
+							<div class="copy">
+								<?php the_sub_field('right_side_section_one_content'); ?>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -112,8 +122,10 @@
 							<div class="product--content">
 								<a name="section6"></a>
 								<span class="title--border"></span>
-								<h2><?php the_sub_field('section_two_right'); ?></h2>
-								<?php the_sub_field('right_side_section_two_content'); ?>
+								<h2 class="product--title"><?php the_sub_field('section_two_right'); ?></h2>
+								<div class="copy">
+									<?php the_sub_field('right_side_section_two_content'); ?>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -126,8 +138,10 @@
 							<div class="product--content">
 								<a name="section7"></a>
 								<span class="title--border"></span>
-								<h2><?php the_sub_field('section_three_right'); ?></h2>
-								<?php the_sub_field('right_side_section_three_content'); ?>
+								<h2 class="product--title"><?php the_sub_field('section_three_right'); ?></h2>
+								<div class="copy">
+									<?php the_sub_field('right_side_section_three_content'); ?>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -140,8 +154,10 @@
 							<div class="product--content">
 								<a name="section8"></a>
 								<span class="title--border"></span>
-								<h2><?php the_sub_field('section_four_right'); ?></h2>
-								<?php the_sub_field('right_side_section_four_content'); ?>
+								<h2 class="product--title"><?php the_sub_field('section_four_right'); ?></h2>
+								<div class="copy">
+									<?php the_sub_field('right_side_section_four_content'); ?>
+								</div>
 							</div>
 						</div>
 					</div>

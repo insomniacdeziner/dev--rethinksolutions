@@ -4,10 +4,15 @@
 	h2{
 		margin-top: 0;
 	}
+	
+	.copy{
+		@include font-size(18px);
+		line-height: 2;
+	}
 }
 .product--image__right{
 	background-color: $white;
-	min-height: 66vh;
+	min-height: 85vh;
 	position: relative;
 	
 	.product--image{
@@ -25,7 +30,7 @@
 
 .product--image__left{
 	background-color: $saltpan;
-	min-height: 66vh;
+	min-height: 85vh;
 	position: relative;
 	
 	.product--image{
