@@ -16,18 +16,17 @@
 <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
 <div class="blog--wrap__post">
 	<header class="article-header">
-			
 			<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
-	
 	</header>
+	
 	<section class="entry-content">
 		<?php the_excerpt(); ?>
 	</section>
+	
 	<footer class="article-footer">
 		<div class="blog--category">
 			<?php printf( '<p class="footer-category">' . __('', 'bonestheme' ) . '%1$s</p>' , get_the_category_list(', ') ); ?>
 			</div>
-			
 	</footer>
 	
 </div>

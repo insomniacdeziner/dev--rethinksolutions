@@ -37,9 +37,11 @@ NAVIGATION STYLES
 	float: right;
 	padding-top: 14px;
 	margin-top: 10px;
+	
 	.request-demo-btn {
 		@include font-size(12px);
 	}
+	
 	.signin-btn{
 		position: relative;
 		top: 12px;

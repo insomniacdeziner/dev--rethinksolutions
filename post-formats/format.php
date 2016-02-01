@@ -15,22 +15,14 @@
               ?>
 
               <article id="post-<?php the_ID(); ?>" <?php post_class('blog--single-post'); ?> role="article" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
-
-
-			 <!-- 
-				 				 
-				 add schema to page titles -- blog posts ... 
-				 template set up for regular pages 
-				 
-			                </header> <?php // end article header ?>
- -->	 
-				
+		
                 <header class="article-header entry-header">
 
                   <h1 class="entry-title single-title" itemprop="headline" rel="bookmark"><?php the_title(); ?></h1>
-<?php if ( function_exists('yoast_breadcrumb') ) {
-		yoast_breadcrumb('<p id="breadcrumbs">','</p>');
-	} ?>
+					
+					<?php if ( function_exists('yoast_breadcrumb') ) {
+							yoast_breadcrumb('<p id="breadcrumbs">','</p>');
+						} ?>
 
                   <p class="byline entry-meta vcard">
 <?php echo get_avatar( get_the_author_meta('ID'), 30); ?>
@@ -45,8 +37,8 @@
 
                   </p>
 
-
-                <section class="entry-content cf" itemprop="articleBody">
+				 </header>
+                <section class="entry-content" itemprop="articleBody">
                   <?php
                     // the content (pretty self explanatory huh)
                     the_content();
