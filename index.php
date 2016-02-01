@@ -10,18 +10,13 @@
 <?php get_template_part('partials/section', 'featured-blog'); ?> 
 
 <div class="blog--wrap">
-	
-	    
+		    
 <?php $the_query = new WP_Query( 'posts_per_page=5' ); ?>
 
-
-
 <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
-
+<div class="blog--wrap__post">
 	<header class="article-header">
-			<div class="blog--category">
-				<?php printf( '<p class="footer-category">' . __('', 'bonestheme' ) . '%1$s</p>' , get_the_category_list(', ') ); ?>
-			</div>
+			
 			<h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 	
 	</header>
@@ -29,8 +24,13 @@
 		<?php the_excerpt(); ?>
 	</section>
 	<footer class="article-footer">
-			<?php the_tags( '<p class="footer-tags tags"><span class="tags-title">' . __( 'Tags:', 'bonestheme' ) . '</span> ', ', ', '</p>' ); ?>
+		<div class="blog--category">
+			<?php printf( '<p class="footer-category">' . __('', 'bonestheme' ) . '%1$s</p>' , get_the_category_list(', ') ); ?>
+			</div>
+			
 	</footer>
+	
+</div>
 	<?php 
 	endwhile;
 	wp_reset_postdata();

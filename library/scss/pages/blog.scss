@@ -34,26 +34,35 @@
 	
 	.entry-title{
 		font-weight: $bold;
+		line-height: 1.3;
+	    margin-bottom: 18px;
+	    display: block;
+	    
 		> a{
-			color: $smaltblue;	
+			color: $smaltblue;
+			
+			&:hover{
+				color: $downy;
+			}	
 		}
 	}
 }
 	
 	.excerpt-read-more{
-		background-color: $downy;
-		color: $white;
-	    border: 1px solid $downy;
-	     
+		color: $downy;
+	     margin-top: 25px;
+	      
 		  &:hover,
 		  &:focus {
 			color: $white;
 		    background-color: darken($jacarta, 4%);
-		    border: 1px solid $jacarta;
+		    border: 2px solid $jacarta;
 		  } 
 	}
 }
-
+.blog--wrap__post{
+	    margin-bottom: 45px;
+}
 .blog--category{
 	border-top: 2px solid $saltpan;
 	border-bottom: 2px solid $saltpan;
@@ -61,10 +70,17 @@
 	text-align: right;
 	padding-right: 15px;
 	margin-bottom: 10px;
+	
 	a{
-		color: $cerulean;
-		@include font-size(10px);
-		display: block;
+		color: $jacarta;
+		@include font-size(12px);
+		font-weight: $light;
+		text-transform: uppercase;
+		
+		&:hover{
+			color: $downy;
+		}
+
 	}
 }
 

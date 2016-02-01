@@ -11,9 +11,9 @@
 				<div class="secondary--inner__nav">
 						<ul>
 							<li class="active"><a href="#section1"><?php the_sub_field('section_one'); ?></a></li>
-							<li><a><a href="#section2"><?php the_sub_field('section_two'); ?></a></li> 
-							<li><a><a href="#section3"><?php the_sub_field('section_three'); ?></a></li>
-							<li><a><a href="#section4"><?php the_sub_field('section_four'); ?></a></li>
+							<li><a href="#section2"><?php the_sub_field('section_two'); ?></a></li> 
+							<li><a href="#section3"><?php the_sub_field('section_three'); ?></a></li>
+							<li><a href="#section4"><?php the_sub_field('section_four'); ?></a></li>
 						</ul>
 					</div> 
 			</div>
