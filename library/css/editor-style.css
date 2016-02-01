@@ -500,8 +500,7 @@ body#tinymce.wp-editor {
   body#tinymce.wp-editor ol,
   body#tinymce.wp-editor ul {
     padding: 0;
-    list-style-position: inside;
-   }
+    list-style-position: inside; }
   body#tinymce.wp-editor nav ul,
   body#tinymce.wp-editor nav ol {
     list-style: none;

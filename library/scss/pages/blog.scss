@@ -102,6 +102,8 @@
 
 .blog{
 	padding: 2em 0 1.3em;
+	
+
 }
 .blog--post{
 	@include gallery(4);
@@ -149,9 +151,30 @@
 	.background-image{
 		height: 40vh;
 	}
+	
 }
 .blog--single-post{
 	width: span(10 of 12);
 	margin: 0 auto;
+	
+	.article-header{
+		margin-bottom: 40px;
+	}
+	
+	.entry-content{
+		width: span(10 of 12);
+		margin: 10px auto;
+	}
+	.article-footer{
+		border-top: 6px solid $saltpan;
+		padding: 30px 10px 50px;
+		margin-top: 30px;
+	}
 }
 
+.entry-date{
+	color: $sirocco;
+	text-transform: uppercase;
+	font-weight: $semi-bold;
+	@include font-size(10px);	
+}
