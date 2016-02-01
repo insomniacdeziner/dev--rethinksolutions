@@ -1,0 +1,43 @@
+%product--content-placeholder{
+	margin-top: 150px;
+	
+	h2{
+		margin-top: 0;
+	}
+}
+.product--image__right{
+	background-color: $white;
+	min-height: 66vh;
+	position: relative;
+	
+	.product--image{
+		position: absolute;
+		bottom: -6px;
+		right:0;
+	}
+	
+	.product--content{
+		@extend %product--content-placeholder;
+		@include span(5 of 12 first);
+	}
+
+}
+
+.product--image__left{
+	background-color: $saltpan;
+	min-height: 66vh;
+	position: relative;
+	
+	.product--image{
+		position: absolute;
+		bottom: -6px;
+		left:0;
+	}
+		
+	.product--content{
+		@extend %product--content-placeholder;
+		@include span(5 of 12 last);
+		
+		
+	}
+}

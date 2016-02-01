@@ -1,0 +1,139 @@
+/******************************************************************
+
+Stylesheet: Nav
+
+******************************************************************/
+.logo{
+	@include span(3 of 12);
+	padding: 12px 0;
+	display: block;
+	
+	@include breakpoint($mobile){
+			width: span(full);
+			text-align: center;  
+		}
+}
+
+
+.nav--secondary{
+	.request-demo-btn {
+		color: $downy;
+		text-transform: uppercase;
+		@include font-size(14px);
+		padding: 0 5px;
+		float: right;
+		line-height: 1.3; 
+		top: 10px;
+	}
+	
+	.signin-btn{
+		position: relative;
+		top: 12px;
+		float: right;
+		a{
+			color: $text-color;
+		}
+		
+	}
+}
+
+.nav {
+	border-bottom: 0;
+	margin: 10px 0;
+	font-weight: $semi-bold;
+	@include font-size(12px);
+
+
+	li {
+		
+		a {
+			display: block;
+			text-decoration: none;
+			padding: 0.75em;
+			
+
+			/*
+			remember this is for mobile ONLY, so there's no need
+			to even declare hover styles here, you can do it in
+			the style.scss file where it's relevant. We want to
+			keep this file as small as possible!
+			*/
+			&:hover, &:focus {
+
+			}
+		}
+
+		&:first-child {}
+
+		&:last-child {}
+
+		/*
+		so you really have to rethink your dropdowns for mobile.
+		you don't want to have it expand too much because the
+		screen is so small. How you manage your menu should
+		depend on the project. Here's some great info on it:
+		http://www.alistapart.com/articles/organizing-mobile/
+		*/
+		ul.sub-menu,
+		ul.children {
+
+			li {
+
+				a {
+					padding-left: 30px;
+
+					&:hover,
+					&:focus {}
+
+					&:link {}
+
+				}
+
+				&:first-child {}
+
+				&:last-child {}
+
+			}
+
+		}
+
+	} /* end .menu li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current_page_ancestor {
+
+		a {}
+
+	}  /* end current highlighters */
+
+
+	@include breakpoint($mobile){
+	  	@include span(12);
+	  	
+	  	
+	  	.request-demo-btn {
+		  	width: span(12);
+		 }
+	  	.signin-btn{
+		  	width: span(12);
+		  	text-align: center;
+		  	border: 1px solid $text-color;
+		  	margin: 5px 0 10px;
+	  	}
+	  	
+	}
+
+} /* end .nav */
+
+.ubermenu-responsive-default.ubermenu{
+	border-top: 1px dotted $gray-lighter;
+}
+
+.ubermenu-submenu li:hover{
+	background-color: $saltpan;
+	color: $downy;
+}
+
+

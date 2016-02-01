@@ -1,0 +1,24 @@
+.contact-us{
+	.background-image{
+		height: 40vh;
+	}
+}
+
+.contact--details{
+	.col{
+		@include span(6 of 12);
+		
+		img{
+			width: 100%;
+			height: auto;
+			padding-right: 20px;
+		}
+	}
+}
+
+.contact--form{
+	width: span(8 of 12);
+	margin: 0 auto;
+	clear: both;
+	
+}

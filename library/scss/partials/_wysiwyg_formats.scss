@@ -1,0 +1,6 @@
+.purple-text{
+	color: $jacarta;
+}
+.small-text{
+	@include font-size(10px);
+}

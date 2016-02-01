@@ -1,0 +1,69 @@
+/******************************************************************
+
+Stylesheet: Secondary Nav
+
+******************************************************************/
+.secondary--menu{
+	width: 100%;
+	margin-bottom: 20px;
+	display: table;
+
+}
+.nav-tabs {
+	width: 100%;
+	display: table;
+	
+	> li {
+	    float: left;
+	    margin-bottom: -1px;
+		width: 50%;
+		text-align: center;
+		background-color: $saltpan;
+		line-height: 4;
+	
+    > a {
+      text-transform: uppercase;
+      font-weight: $bold;
+	  
+      
+     &:hover {
+        color: $jacarta;
+        
+      }
+	  
+
+    }
+		
+    // Active state, and its :hover to override normal :hover
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $downy;
+        background-color: $white;
+        border-bottom-color: transparent;
+        cursor: default;
+		border-top: 6px solid $downy;
+		display: block;
+      }
+    }
+  }
+
+}
+
+
+.secondary--inner__nav{
+		width: span(8 of 12);
+		margin: 20px auto;
+		@include font-size(14px);
+	ul {
+		
+		margin: 0 auto;
+		
+		li{
+			display: inline-block;
+			border: 2px solid $downy;
+			padding: 10px 15px;
+		}
+	}
+}

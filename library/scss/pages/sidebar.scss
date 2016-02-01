@@ -1,0 +1,9 @@
+.sidebar{
+	@include span(3 of 12 last);
+}
+
+.featured--whitepaper{
+	background-color: $saltpan;
+	padding: 10px;
+	margin-bottom: 30px;
+}

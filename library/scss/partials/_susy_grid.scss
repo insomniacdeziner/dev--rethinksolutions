@@ -1,0 +1,30 @@
+/* Changing Susy default global settings */
+$susy: (
+  container: 1220px,
+  gutters: .25,
+  columns: 12,
+  gutter-position: outside,
+  debug: (
+	  	image: hide,
+	    color: rgba(#66f, .25),
+	    output: background,
+	    toggle: top left,
+  	)
+ );
+
+/* Makes border-box properties */
+@include border-box-sizing;
+.content{
+	
+}
+.wrap {
+  @include container;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/* Portrait tablet to landscape */
+
+$mobile: max-width 481px;
+$tablet: max-width 1029px;
+/* Landscape to small desktop */

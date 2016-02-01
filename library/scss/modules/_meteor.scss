@@ -1,0 +1,34 @@
+/******************************************************************
+
+Stylesheet: Meteor Slides 
+
+******************************************************************/
+.meteor-slides .mslide img {
+	width:100%;
+	height:auto;
+}
+.meteor-slide-heading{
+	@include span(12);
+	position: relative;
+	z-index:99;	
+	width:100%;
+    padding: 1px 30px;
+	text-align:center;
+	bottom: 170px;
+	color: $white;
+}
+
+
+.heading-large{
+	@include font-size(32px);
+	font-weight: 600;
+	line-height:1;
+	margin-bottom:20px;
+	padding: 0 10px;
+}
+
+.heading-medium{
+	@include font-size(18px);
+	margin-bottom:20px;
+	padding: 0 10px;
+}
