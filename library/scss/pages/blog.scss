@@ -178,3 +178,22 @@
 	font-weight: $semi-bold;
 	@include font-size(10px);	
 }
+
+
+
+@include breakpoint($mobile){
+	.blog--post{
+		@include gallery(12 of 12);
+		clear: both;
+		margin-bottom: 20px;
+	}
+}
+
+
+
+
+
+
+
+
+

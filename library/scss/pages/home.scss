@@ -12,7 +12,6 @@
 	margin-bottom: gutter();
 	position: relative;
 	z-index: 9;
-	padding-bottom: 40px;
 	background-color: $white;
 	height: 300px;
 	
@@ -214,7 +213,8 @@
 			margin-top: 22px;
 		}
 	}
-	
+
+
 	.marketing--product__image img{
 		width: 100%;
 		height: auto;
@@ -253,13 +253,15 @@
 	
 		}
 	}
-}
+}    
 
 @include breakpoint($mobile){
+	
 	.marketing figure{
 			@include gallery(12 of 12);
 			margin-bottom: 1em;
 			clear: both !important;
+			display: table;
 	}
 	.marketing--banner__copy{
 		h1{
@@ -278,6 +280,8 @@
 	
 	.product--title__subtitle{
 		@include font-size(18px);	
+	    line-height: 1em;
+		padding-bottom: 22px;
 	}
 	
 	.product--title__description{
@@ -292,7 +296,12 @@
 			}	
 	}
 	
-	
+	.marketing--boxes__btn{
+		.btn__green-border{
+			margin: 17px 0 30px;
+		}
+	}
+
 	.marketing-feature__desc{
 			@include span(12);		
 			padding: 2em 2em 0;
