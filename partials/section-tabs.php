@@ -14,8 +14,8 @@
 							<div class="product--content">
 								<a name="<?php the_sub_field('anchor_name'); ?>"></a>
 								<span class="title--border"></span>
-								<h2><?php the_sub_field('tab_title'); ?></h2>
-								<?php the_sub_field('tab_content'); ?>
+								<h2 class="product--title"><?php the_sub_field('tab_title'); ?></h2>
+								<div class="copy"><?php the_sub_field('tab_content'); ?></div>
 							</div>
 						</div>
 				</div>
@@ -30,8 +30,8 @@
 							<div class="product--content">
 								<a name="<?php the_sub_field('left_anchor_name'); ?>"></a>
 								<span class="title--border"></span>
-								<h2><?php the_sub_field('left_tab_title'); ?></h2>
-								<?php the_sub_field('left_tab_content'); ?>
+								<h2 class="product--title"><?php the_sub_field('left_tab_title'); ?></h2>
+								<div class="copy"><?php the_sub_field('left_tab_content'); ?></div>
 							</div>
 						</div>
 				</div>					

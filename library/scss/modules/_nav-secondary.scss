@@ -54,11 +54,10 @@ Stylesheet: Secondary Nav
 
 
 .secondary--inner__nav{
-		width: span(8 of 12);
 		margin: 20px auto;
 		@include font-size(14px);
 	ul {
-		
+		text-align: center;
 		margin: 0 auto;
 		
 		li{
