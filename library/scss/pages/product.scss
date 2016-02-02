@@ -45,3 +45,25 @@
 		
 	}
 }
+
+@include breakpoint($tablet--portrait){
+	.product--image {
+		position: static !important;
+		
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+	.product--image__right, .product--image__left{
+		.product--content{
+			@include span(12 of 12);
+			margin: 100px 0 60px;
+
+		}
+	}
+}
+
+@include breakpoint($mobile){
+	
+}

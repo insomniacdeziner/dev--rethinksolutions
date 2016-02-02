@@ -43,3 +43,8 @@
 	margin: 4px;
 }
 
+@include breakpoint($tablet--portrait){
+	.contact--form__input-wrap{
+		width: span(12);
+	}
+}
