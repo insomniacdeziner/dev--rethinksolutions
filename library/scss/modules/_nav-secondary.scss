@@ -70,7 +70,7 @@ Stylesheet: Secondary Nav
 
 .secondary--inner__bg{
 	background-color: $saltpan;
-	box-shadow: 0px 3x 5px darken($saltpan, 20%);
+	box-shadow: 0px 3x 5px $gray-dark;
 	padding: 16px;
 	margin: 0;
 	width: 100% !important;

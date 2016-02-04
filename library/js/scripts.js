@@ -143,7 +143,7 @@ $('.nav--left').click(function(){
     limit: $('.footer').offset().top - $('.secondary--inner__nav').outerHeight() - 5,
     zIndex: 999,
     preFixed: function() { $(this).addClass('secondary--inner__bg'); },
-    postFixed: function() { $(this).addClass('secondary--inner__bg'); }
+    postFixed: function() { $(this).removeClass('secondary--inner__bg'); }
 
 });
 
