@@ -183,9 +183,9 @@
 
 @include breakpoint($mobile){
 	.blog--post{
-		@include gallery(12 of 12);
-		clear: both;
-		margin-bottom: 20px;
+		@include gallery(12);
+		float: none;
+		margin-bottom: 40px;
 	}
 }
 

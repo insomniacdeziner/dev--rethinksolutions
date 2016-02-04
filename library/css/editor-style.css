@@ -796,3 +796,6 @@ body#tinymce.wp-editor {
         margin-left: auto;
         display: block;
         clear: both; } }
+  body#tinymce.wp-editor .large-text {
+    font-size: 28px;
+    font-size: 1.75rem; }

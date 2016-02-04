@@ -135,4 +135,18 @@ $('.nav--left').click(function(){
 	  	$('.nav--right').removeClass('active');
 });
 
+ 
+
+	 
+ $('.secondary--inner__nav').scrollToFixed({
+    marginTop: $('.nav--primary').outerHeight() + 5,
+    limit: $('.footer').offset().top - $('.secondary--inner__nav').outerHeight() - 5,
+    zIndex: 999,
+    preFixed: function() { $(this).addClass('secondary--inner__bg'); },
+    postFixed: function() { $(this).addClass('secondary--inner__bg'); }
+
+});
+
+
+
 }); /* end of as page load scripts */

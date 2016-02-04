@@ -15,7 +15,7 @@
 				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 			</div>
 			<div class="blog--post__desc">	
-				<?php the_excerpt(); ?>
+				<?php echo get_excerpt(125); ?>
 			</div>
 		</div>
 	

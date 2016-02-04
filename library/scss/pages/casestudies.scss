@@ -1,0 +1,47 @@
+#casestudies{
+	margin-bottom: 3em;
+}
+.casestudy--introduction{
+	
+}
+.casestudy--content{
+	@include gallery(6 of 12);
+	float: left;
+	border: 1px solid $saltpan;
+	
+	.copy{
+		padding: 10px 20px;
+		margin: 20px 0 40px;
+		
+		ul{
+			padding-left: 25px;
+		}
+	}
+	
+	.product--title{
+		margin-top: 0.2em;
+	}
+	
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
+
+.case-study--form{
+	background-color: $saltpan;
+	padding: 30px;
+	
+	.ninja-forms-field{
+		width: 100%;
+	}
+}
+
+.casestudy--btn{
+	@extend %btn;
+	border: 1px solid $white;
+	background-color: $downy;
+	color: $white;
+	padding-left:15px;
+	padding-right: 15px;
+}

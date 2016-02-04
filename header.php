@@ -58,6 +58,7 @@
 						</picture>
                     
                     </a>
+                 
                    <!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/library/images/rethink-solutions-logo.png" width="178" height="60" alt=""/></a></p> -->
 
 					<?php // if you'd like to use the site description you can un-comment it below ?>
@@ -78,7 +79,7 @@
 						)); ?>
 
 					</nav> 
-					
+					</div>
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement" class="nav--primary">
 						<?php wp_nav_menu(array(
     					         'container' => false,                           // remove nav container
@@ -99,6 +100,6 @@
 			
 			
 
-				</div>
+		
 
 			</header>

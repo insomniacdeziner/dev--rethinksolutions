@@ -29,4 +29,24 @@
 	background-size: cover;
 	width: 100%;
 	height: auto;
+	position: relative;
+    z-index: 2;
+}
+
+@include breakpoint($mobile){
+	#post-52 { 
+		margin-bottom: 14em;
+		background-color: $saltpan;
+		
+		.site--banner__copy{
+			width: span(12 of 12);
+			text-align: center;
+			padding-top: 14em;
+			
+			h2{
+				@include font-size(18px);
+			}
+		}
+		
+	}
 }

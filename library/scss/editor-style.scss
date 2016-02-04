@@ -215,7 +215,9 @@ body#tinymce.wp-editor {
 			}
 
 		}
-
-
+		
+	.large-text {
+	  @include font-size(28px);
+	}
 }
 

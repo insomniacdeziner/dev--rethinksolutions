@@ -4,3 +4,6 @@
 .small-text{
 	@include font-size(10px);
 }
+.large-text {
+   @include font-size(28px);
+}

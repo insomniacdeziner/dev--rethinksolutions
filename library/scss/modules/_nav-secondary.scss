@@ -67,3 +67,12 @@ Stylesheet: Secondary Nav
 		}
 	}
 }
+
+.secondary--inner__bg{
+	background-color: $saltpan;
+	box-shadow: 0px 3x 5px darken($saltpan, 20%);
+	padding: 16px;
+	margin: 0;
+	width: 100% !important;
+	left: 0 !important;
+}

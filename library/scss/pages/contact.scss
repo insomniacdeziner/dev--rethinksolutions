@@ -3,7 +3,9 @@
 		height: 40vh;
 	}
 }
-
+.contact--wrap{
+	background-color: $saltpan;
+}
 .contact--details{
 	.col{
 		@include span(6 of 12);
@@ -13,12 +15,38 @@
 			height: auto;
 			padding-right: 20px;
 		}
+	
 	}
+	margin-bottom:40px;
 }
-
+.contact--details-copy{
+	font-weight: $light;
+	@include font-size(24px);
+	text-align: center;
+	margin-bottom: 10px;
+}
+.contact--col-right{
+	padding-right: 20px;
+}
 .contact--form{
-	width: span(8 of 12);
+	border: 1px solid $saltpan;
 	margin: 0 auto;
 	clear: both;
+	padding: 20px 0 30px;
+}
+
+.contact--details-list {
+	@include span(12);
+
+	display: table;
 	
+	.contact--details-name{
+		@include span(6 first);
+		font-weight: $semi-bold;
+		padding-top: 17px;
+	}
+	
+	.contact--details-address{
+		@include span(6 last);
+	}
 }

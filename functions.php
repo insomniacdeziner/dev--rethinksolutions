@@ -278,6 +278,13 @@ function my_mce_before_init_insert_formats( $init_array ) {
 			'classes' => 'small-text',
 			'wrapper' => true,
 		),
+		
+		array(  
+			'title' => 'Large Text',  
+			'block' => 'span',  
+			'classes' => 'large-text',
+			'wrapper' => true,
+		),
 
 );  
 	// Insert the array, JSON ENCODED, into 'style_formats'
@@ -289,12 +296,14 @@ function my_mce_before_init_insert_formats( $init_array ) {
 // Attach callback to 'tiny_mce_before_init' 
 add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' ); 
 
-// custom excerpt length
-function bones_custom_excerpt_length( $length ) {
-   return 20;
+function get_excerpt($count){
+  $permalink = get_permalink($post->ID);
+  $excerpt = get_the_content();
+  $excerpt = strip_tags($excerpt);
+  $excerpt = substr($excerpt, 0, $count);
+  $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
+  $excerpt = $excerpt.'... <a class="excerpt-read-more" href="'.$permalink.'">Read More</a>';
+  return $excerpt;
 }
-add_filter( 'excerpt_length', 'bones_custom_excerpt_length', 999 );
-
-
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>
