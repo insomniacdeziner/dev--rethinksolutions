@@ -247,6 +247,7 @@ body#tinymce.wp-editor {
   I've edited it a bit, but it's a nice starting point.
   */
   @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+  @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
   /*
    i imported this one in the functions file so bones would look sweet.
    don't forget to remove it for your site.

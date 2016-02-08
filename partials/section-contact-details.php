@@ -3,13 +3,12 @@
 			<div class="contact--details-copy">
 			<?php the_field('contact_us_introduction'); ?></div>
 	
-		
 			<div class="col contact--col-right">
-					<div class="large--heading blog--title">Our Offices</div>
-			<?php // open the WordPress loop
-					if (have_posts()) : while (have_posts()) : the_post();
-					
-						// are there any rows within within our flexible content?
+					<div class="contact--title">Our Offices</div>
+				<?php // open the WordPress loop
+						if (have_posts()) : while (have_posts()) : the_post();
+						
+							// are there any rows within within our flexible content?
 						if( have_rows('contact_us_details') ): 
 					
 							// loop through all the rows of flexible content
@@ -25,7 +24,7 @@
 
 			</div>
 		<div class="col">
-			<div class="large--heading blog--title">Get in Touch</div>
+			<div class="contact--title">Get in Touch</div>
 			<div class="contact--form">
 				<?php if( function_exists( 'ninja_forms_display_form' ) ){ ninja_forms_display_form( 1 ); } ?>
 			</div>

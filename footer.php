@@ -5,13 +5,12 @@
 						<?php get_template_part('partials/footer', 'about'); ?> 
 					</div>
 					<div class="footer--column">
-						<?php get_template_part('partials/footer', 'links'); ?> 
-					</div>
-					<div class="footer--column">		
 						<?php get_template_part('partials/footer', 'address'); ?> 
 					</div>
-					<div class="footer--column footer__social">
+			
+					<div class="footer--column">
 						<?php get_template_part('partials/footer', 'social'); ?> 
+						
 					</div>
 		
 				</div>

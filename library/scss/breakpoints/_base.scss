@@ -835,42 +835,7 @@ FOOTER STYLES
 	height: 100%;
 }
 
-.footer--column{
-	@include span(3 of 12);	
-	
-	&:first-child{
-		padding-right: 10px;
-	}
-}
 
-.footer__title{
-	@include font-size(18px);
-	font-weight: $bold;
-}
-.footer__links{
-	#menu-footer{
-		li{
-			a{
-				text-decoration: none;
-				
-			}
-		}
-	}
-}
-.footer__address{
-	.footer__title{}
-}
-.source-org{
-	background-color: $black;
-	position: relative;
-	bottom: -30px;
-	height: 30px;
-	padding: 8px 0 0;
-}
-.copyright{
-	text-align: center;
-	@include font-size(10px);
-}
 
 	/*
 	if you checked out the link above:

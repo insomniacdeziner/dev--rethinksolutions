@@ -41,12 +41,21 @@
 	display: table;
 	
 	.contact--details-name{
-		@include span(6 first);
+		@include span(3 first);
 		font-weight: $semi-bold;
 		padding-top: 17px;
 	}
 	
 	.contact--details-address{
-		@include span(6 last);
+		@include span(9 last);
 	}
+}
+
+.contact--title{
+	@include font-size(24px);
+	text-align: left;
+	margin-bottom: 30px;
+	padding: 10px 0; 
+	border-bottom: 2px dotted $saltpan;
+	border-top: 2px dotted $saltpan;
 }
