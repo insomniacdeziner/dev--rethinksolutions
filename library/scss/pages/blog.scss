@@ -71,6 +71,7 @@
 	text-align: right;
 	padding-right: 15px;
 	margin-bottom: 10px;
+	background-color:lighten($saltpan, 3%);
 	
 	a{
 		color: $jacarta;
@@ -94,6 +95,19 @@
 	margin-bottom: 20px;
 }
 
+
+.cat-item {
+	color: $downy;
+	font-weight: $bold;
+	a{
+		border-right:2px solid $saltpan;
+		padding: 10px;
+		margin-right: 3px;
+		font-weight: $normal;
+		color: $downy;
+		text-transform: uppercase;
+	}
+}
 
 /*********************************
 	
