@@ -139,8 +139,8 @@ $('.nav--left').click(function(){
 
 	 
  $('.secondary--inner__nav').scrollToFixed({
-    marginTop: $('.nav--primary').outerHeight() + 5,
-    limit: $('.footer').offset().top - $('.secondary--inner__nav').outerHeight() - 5,
+    marginTop: $('.nav--primary').outerHeight() - 5,
+    limit: $('.footer').offset().top - $('.secondary--inner__nav').outerHeight() - 0,
     zIndex: 999,
     preFixed: function() { $(this).addClass('secondary--inner__bg'); },
     postFixed: function() { $(this).removeClass('secondary--inner__bg'); }

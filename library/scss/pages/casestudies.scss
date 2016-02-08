@@ -6,6 +6,11 @@
 }
 .casestudy--content{
 	@include gallery(6 of 12);
+	margin-bottom: gutter(10);
+	
+	&:nth-child(6n) {
+	    @include last;
+	  }
 	float: left;
 	border: 1px solid $saltpan;
 	
@@ -20,6 +25,7 @@
 	
 	.product--title{
 		margin-top: 0.2em;
+		@include font-size(24px);
 	}
 	
 	img{

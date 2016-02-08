@@ -1,0 +1,39 @@
+
+.whitepaper--content{
+	@include gallery(4 of 12);
+	margin-bottom: 20px;
+	border: 1px solid $saltpan;
+	
+	.copy{
+		padding: 10px 20px;
+		margin: 20px 0 10px;
+		
+		ul{
+			padding-left: 25px;
+		}
+	}
+	
+	.product--title{
+		margin-top: 0.2em;
+		@include font-size(24px);
+	}
+	
+	img{
+		width: 100%;
+		height: auto;
+	}
+}
+
+.whitepaper--btn{
+	@extend %btn;
+	border: 1px solid $white;
+	background-color: $downy;
+	color: $white;
+	padding-left:15px;
+	padding-right: 15px;
+}
+
+.whitepaper--button{
+	margin-bottom: 20px;
+	margin-left: 18px;
+}
