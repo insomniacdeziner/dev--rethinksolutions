@@ -2,7 +2,7 @@
 
 <main class="main contact-us" role="main">
 
-	<div class="wrap">
+	<div class="wrap search">
 		<div class="blog--wrap">
 						<h1 class="archive-title"><span><?php _e( 'Search Results for:', 'bonestheme' ); ?></span> <?php echo esc_attr(get_search_query()); ?></h1>
 
