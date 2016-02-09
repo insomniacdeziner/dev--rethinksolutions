@@ -1,11 +1,10 @@
-
 .site--banner__copy{
 	position: absolute;
 	z-index: 9;
 	color: $white;
 	text-align: center;
 	padding-top: 12em;
-	
+	@include font-size(32px);
 }
 
 #post-52 { /* product page */
@@ -33,20 +32,27 @@
     z-index: 2;
 }
 
+@include breakpoint($tablet--portrait){
+	.site--banner__copy{
+		font-size: 70%;
+		
+	}
+	
+	#post-52 .site--banner__copy{
+		@include span(8 of 12);
+		padding-top: 3em;
+	}
+}
+
+
 @include breakpoint($mobile){
-	#post-52 { 
-		margin-bottom: 14em;
-		background-color: $saltpan;
+	#post-52 .site--banner__copy{
+		@include span(8 of 12);
+		padding-top: 1em;
+		font-size: 40%;
 		
-		.site--banner__copy{
-			width: span(12 of 12);
-			text-align: center;
-			padding-top: 14em;
-			
-			h2{
-				@include font-size(18px);
-			}
+		p{
+			font-size: 30%;
 		}
-		
 	}
 }
