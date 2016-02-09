@@ -33,14 +33,12 @@
 }
 
 @include breakpoint($tablet--portrait){
-	.site--banner__copy{
-		font-size: 70%;
-		
-	}
-	
-	#post-52 .site--banner__copy{
-		@include span(8 of 12);
-		padding-top: 3em;
+	#post-52 { 
+		.site--banner__copy{
+			@include span(6 of 12);
+			padding-top: 3em;
+			font-size: 70%;
+		}
 	}
 }
 

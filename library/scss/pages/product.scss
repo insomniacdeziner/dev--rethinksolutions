@@ -40,9 +40,7 @@
 		
 	.product--content{
 		@extend %product--content-placeholder;
-		@include span(5 of 12 last);
-		
-		
+		@include span(5 of 12 last);	
 	}
 }
 
