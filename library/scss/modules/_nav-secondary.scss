@@ -78,6 +78,9 @@ Stylesheet: Secondary Nav
 }
 
 @include breakpoint($tablet--portrait){
+	.secondary--inner__nav ul li{
+		padding: 10px 15px 10px 29px;
+	}
 
 }
 

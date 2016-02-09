@@ -26,6 +26,6 @@ $susy: (
 /* Portrait tablet to landscape */
 
 $mobile: max-width 481px;
-$tablet--portrait: max-width 768px;
+$tablet--portrait: 768px 1029px;
 $tablet: max-width 1029px;
 /* Landscape to small desktop */

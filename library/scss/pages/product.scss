@@ -45,13 +45,47 @@
 }
 
 @include breakpoint($tablet--portrait){
-	.product--image {
-		position: static !important;
+	.product--image__right{
+		min-height: 65vh;
 		
-		img{
-			width: 100%;
-			height: auto;
+		.product--image{
+			@include span(6 of 12 last);
 		}
+		
+		.product--content{
+			@include span(6 of 12 first);
+		}
+	}
+	
+	.product--image__left{
+		min-height: 65vh;
+		
+		.product--image{
+			@include span(6 of 12 first);
+			
+			img{
+				position: relative;
+				left: -295px;
+			}
+			
+		}
+		
+		.product--content{
+			@include span(6 of 12 last);
+		}
+	}
+	
+	.product--image__right .product--content, .product--image__left .product--content {
+	    margin-top: 200px;
+	}
+}
+
+
+@include breakpoint($mobile){
+	.product--image__right .product--image {
+			@include span(12 of 12);
+			@include push(12 of 12);
+			
 	}
 	.product--image__right, .product--image__left{
 		.product--content{

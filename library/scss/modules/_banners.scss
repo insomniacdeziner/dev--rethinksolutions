@@ -9,11 +9,17 @@
 
 #post-52 { /* product page */
 	.site--banner__copy{
-		@include span(5 of 12);
 		text-align: left;
-		
+		@include span(6 of 12);
+		padding-top: 3em;
+
 		h2{
 			font-weight: $light;
+			@include font-size(32px);
+		}
+		
+		p{
+			margin-top: -13px;
 		}
 	}
 	
@@ -33,13 +39,22 @@
 }
 
 @include breakpoint($tablet--portrait){
-	#post-52 { 
+	#post-52 { /* product page */
 		.site--banner__copy{
-			@include span(6 of 12);
-			padding-top: 3em;
-			font-size: 70%;
+			text-align: left;
+			@include span(7 of 12);
+			padding-top: 1em;
+	
+			h2{
+				font-weight: $light;
+				@include font-size(24px);
+			}
+			
+			p{
+				margin-top: -13px;
+			}
 		}
-	}
+}
 }
 
 
@@ -47,7 +62,6 @@
 	#post-52 .site--banner__copy{
 		@include span(8 of 12);
 		padding-top: 1em;
-		font-size: 40%;
 		
 		p{
 			font-size: 30%;
