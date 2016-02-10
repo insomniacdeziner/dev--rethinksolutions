@@ -4,14 +4,14 @@
 	color: $white;
 	text-align: center;
 	padding-top: 12em;
-	@include font-size(32px);
+
 }
 
 #post-52 { /* product page */
 	.site--banner__copy{
 		text-align: left;
 		@include span(6 of 12);
-		padding-top: 3em;
+		padding-top: 4.5em;
 
 		h2{
 			font-weight: $light;
@@ -19,7 +19,8 @@
 		}
 		
 		p{
-			margin-top: -13px;
+			margin-top: 13px;
+			font-size: xx-small;
 		}
 	}
 	
@@ -40,15 +41,14 @@
 
 @include breakpoint($tablet--portrait){
 	#post-52 { /* product page */
+
+		font-size: 60%;
+		
 		.site--banner__copy{
 			text-align: left;
 			@include span(7 of 12);
-			padding-top: 1em;
-	
-			h2{
-				font-weight: $light;
-				@include font-size(24px);
-			}
+			padding-top: 10px;
+			font-size: 40%;
 			
 			p{
 				margin-top: -13px;
@@ -59,12 +59,34 @@
 
 
 @include breakpoint($mobile){
-	#post-52 .site--banner__copy{
-		@include span(8 of 12);
-		padding-top: 1em;
+	.page-template-page-products-php .banner{
+		background-color: $saltpan;
+	}
+	
+	.product--image__right .product--image{
+		position: relative !important;
+	}
+
+	#post-52 {
+		font-size: 100%;
+		
+		.background--image_partial{
+			left: 52px;
+		}
+		.site--banner__copy{
+			@include span(8 of 12);
+			padding-top: 10px;
+		
+		h2{
+			margin-bottom: 10px;
+			font-size: 60%;
+		}
 		
 		p{
-			font-size: 30%;
+
+			margin-top: 10px;
 		}
 	}
+}
+
 }

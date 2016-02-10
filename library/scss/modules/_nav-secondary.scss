@@ -12,6 +12,8 @@ Stylesheet: Secondary Nav
 .nav-tabs {
 	width: 100%;
 	display: table;
+	text-indent: 0;
+	padding-left: 0;	
 	
 	> li {
 	    float: left;
@@ -63,7 +65,7 @@ Stylesheet: Secondary Nav
 		li{
 			display: inline-block;
 			border: 2px solid $downy;
-			padding: 10px 15px;
+			padding: 10px 15px 10px 29px;
 		}
 	}
 }
@@ -76,14 +78,6 @@ Stylesheet: Secondary Nav
 	width: 100% !important;
 	left: 0 !important;
 }
-
-@include breakpoint($tablet--portrait){
-	.secondary--inner__nav ul li{
-		padding: 10px 15px 10px 29px;
-	}
-
-}
-
 
 @include breakpoint($mobile){
 	.secondary--inner__nav{

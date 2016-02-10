@@ -26,14 +26,20 @@
 }
 .footer__social{
 	
-	ul li{
+	ul {
+		position: relative;
+		bottom: 17px;
+	li {
+		
 		float: left;
 		padding: 10px 20px;
 		list-style-type: none;
 		
+		
 		&:first-child{
 			padding-left: none;
 		}
+	}
 	}
 }
 .source-org{
