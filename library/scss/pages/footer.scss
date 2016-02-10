@@ -53,3 +53,15 @@
 	text-align: center;
 	@include font-size(10px);
 }
+
+@include breakpoint($tablet--portrait){
+	.footer--column{
+		@include span(12);	
+	}
+}
+
+@include breakpoint($mobile){
+	.footer--column{
+		@include span(12);	
+	}
+}

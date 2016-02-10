@@ -52,3 +52,16 @@
 		width: span(12);
 	}
 }
+
+@include breakpoint($mobile){
+	.ninja-forms-cont{
+		width: span(12);
+	}
+	.request--copy{
+		width: span(12);
+	}
+	.contact--form__input-wrap{
+		width: span(12);
+		float: none;
+	}
+}

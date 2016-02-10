@@ -82,17 +82,48 @@
 
 
 @include breakpoint($mobile){
-	.product--image__right .product--image {
-			@include span(12 of 12);
-			@include push(12 of 12);
-			
-	}
-	.product--image__right, .product--image__left{
+	.product--image__right{
+		.product--image{
+			@include span(8 of 12 first);
+			margin: 0 auto;
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
 		.product--content{
-			@include span(12 of 12);
-			margin: 100px 0 60px;
-
+			@include span(12 of 12 last);
+			margin-top: 50px;
 		}
 	}
+	
+	.content--left > div:nth-child(3), .content--right > div:nth-child(3){
+			height: 800px;
+	}
+	.content--right > div:nth-child(5){
+		height: 550px;
+	}
+	.product--image__left{
+		height: 480px;
+		margin-bottom: 40px;
+		
+		.product--image{
+			@include span(8 of 12 first);
+			margin: 0 auto;
+			bottom: -5px;
+		
+			
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+		
+		.product--content{
+			@include span(12 of 12 last);
+			margin-top: 30px;
+		}
+	}
+
 }
 
