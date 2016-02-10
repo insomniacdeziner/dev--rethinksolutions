@@ -3,6 +3,10 @@
 	@include span(3 of 12 last);
 }
 
+.blog .sidebar{
+	margin-top: 1.5em;
+}
+
 .featured--whitepaper{
 	background-color: $saltpan;
 	padding: 10px;

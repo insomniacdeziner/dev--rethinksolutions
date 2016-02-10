@@ -1648,7 +1648,7 @@ Stylesheet: Meteor Slides
 
 .product--image__right {
   background-color: #fff;
-  min-height: 70vh;
+  min-height: 85vh;
   position: relative; }
   .product--image__right .product--image {
     position: absolute;
@@ -1660,7 +1660,7 @@ Stylesheet: Meteor Slides
 
 .product--image__left {
   background-color: #F1F7F4;
-  min-height: 70vh;
+  min-height: 85vh;
   position: relative; }
   .product--image__left .product--image {
     position: absolute;
@@ -1674,8 +1674,15 @@ Stylesheet: Meteor Slides
   #post-52 .site--banner__copy {
     padding-top: 14.5em; }
 
+  .product--image__left .product--content {
+    margin-left: 8.4745762712%; }
+  .product--image__left .product--image {
+    left: 149px; }
+
   .product--image__right .product--content {
-    margin-left: 8.4745762712%; } }
+    margin-left: 8.4745762712%; }
+  .product--image__right .product--image {
+    right: 149px; } }
 @media (min-width: 768px) and (max-width: 1029px) {
   .product--image__right {
     min-height: 65vh; }
@@ -1972,6 +1979,9 @@ Stylesheet: Meteor Slides
   margin-top: 6.2em;
   width: 23.7288135593%;
   float: right; }
+
+.blog .sidebar {
+  margin-top: 1.5em; }
 
 .featured--whitepaper {
   background-color: #F1F7F4;

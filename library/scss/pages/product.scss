@@ -11,7 +11,7 @@
 }
 .product--image__right{
 	background-color: $white;
-	min-height: 70vh;
+	min-height: 85vh;
 	position: relative;
 	
 	.product--image{
@@ -29,7 +29,7 @@
 
 .product--image__left{
 	background-color: $saltpan;
-	min-height: 70vh;
+	min-height: 85vh;
 	position: relative;
 	
 	.product--image{
@@ -49,9 +49,22 @@
 	#post-52 .site--banner__copy {
     	padding-top: 14.5em;
     }
-    
-  	.product--image__right .product--content{
-		@include push(1);
+    .product--image__left{
+	  	.product--content{
+			@include push(1);
+		}
+		.product--image{
+			left: 149px;
+		}
+	}
+	
+  	.product--image__right{
+	  	.product--content{
+			@include push(1);
+		}
+		.product--image{
+			right: 149px;
+		}
 	}
 }
 
