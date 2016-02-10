@@ -69,6 +69,8 @@
 }
 
 @include breakpoint($tablet--portrait){
+	
+	
 	.product--image__right{
 		min-height: 65vh;
 		
@@ -86,7 +88,7 @@
 		
 		.product--image{
 			@include span(6 of 12 first);
-			
+			left: -38px;
 			img{
 				position: relative;
 				left: -295px;
@@ -106,6 +108,7 @@
 
 
 @include breakpoint($mobile){
+	
 	.product--image__right{
 		.product--image{
 			@include span(8 of 12 first);

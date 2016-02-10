@@ -1328,10 +1328,12 @@ Stylesheet: Meteor Slides
       text-align: left;
       width: 57.6271186441%;
       float: left;
-      padding-top: 10px;
-      font-size: 40%; }
+      padding-top: 47px; }
+      #post-52 .site--banner__copy h2 {
+        font-size: 24px;
+        font-size: 1.5rem; }
       #post-52 .site--banner__copy p {
-        margin-top: -13px; } }
+        margin-top: 10px; } }
 @media (max-width: 481px) {
   .page-template-page-products-php .banner {
     background-color: #F1F7F4; }
@@ -1697,7 +1699,8 @@ Stylesheet: Meteor Slides
     min-height: 65vh; }
     .product--image__left .product--image {
       width: 49.1525423729%;
-      float: left; }
+      float: left;
+      left: -38px; }
       .product--image__left .product--image img {
         position: relative;
         left: -295px; }
