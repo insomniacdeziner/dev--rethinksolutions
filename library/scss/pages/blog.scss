@@ -106,6 +106,10 @@
 		font-weight: $normal;
 		color: $downy;
 		text-transform: uppercase;
+		
+		&:hover{
+			color: $link-hover;
+		}
 	}
 }
 

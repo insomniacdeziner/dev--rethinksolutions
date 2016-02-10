@@ -11,6 +11,7 @@ Stylesheet: Nav
 	@include breakpoint($mobile){
 			width: span(full);
 			text-align: center;  
+			margin-top: 1em;
 		}
 }
 

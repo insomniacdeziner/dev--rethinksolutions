@@ -183,7 +183,14 @@
 	}
 }
 
-
+@include breakpoint($desktop--large){
+	.marketing-feature__desc{
+		padding-top: 20em;	
+	}
+	.client--logos {
+    	margin-bottom: 4.5em;
+    }
+}
 
 @include breakpoint($tablet--portrait){
 	

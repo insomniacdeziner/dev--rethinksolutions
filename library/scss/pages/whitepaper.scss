@@ -1,4 +1,6 @@
-
+.whitepaper--introduction{
+	margin:2em 0 3.5em;
+}
 .whitepaper--content{
 	@include gallery(4 of 12);
 	margin-bottom: 20px;
@@ -36,4 +38,12 @@
 .whitepaper--button{
 	margin-bottom: 20px;
 	margin-left: 18px;
+}
+
+@include breakpoint($mobile){
+	.whitepaper--content{
+		@include gallery(12 of 12);
+		clear: both !important;
+	}
+	
 }

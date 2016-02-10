@@ -23,10 +23,8 @@ $susy: (
   margin: 0 auto;
 }
 
-/* Portrait tablet to landscape */
-
-$mobile: max-width 481px;
+$desktop--large: min-width 1600px;
 $tablet--portrait: 768px 1029px;
 $tablet--large: 980px 1280px;
 $tablet: max-width 1029px;
-/* Landscape to small desktop */
+$mobile: max-width 481px;

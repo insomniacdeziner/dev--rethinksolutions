@@ -44,6 +44,17 @@
 	}
 }
 
+@include breakpoint($desktop--large){
+	
+	#post-52 .site--banner__copy {
+    	padding-top: 14.5em;
+    }
+    
+  	.product--image__right .product--content{
+		@include push(1);
+	}
+}
+
 @include breakpoint($tablet--portrait){
 	.product--image__right{
 		min-height: 65vh;
