@@ -11,7 +11,7 @@
 }
 .product--image__right{
 	background-color: $white;
-	min-height: 85vh;
+	min-height: 70vh;
 	position: relative;
 	
 	.product--image{
@@ -29,7 +29,7 @@
 
 .product--image__left{
 	background-color: $saltpan;
-	min-height: 85vh;
+	min-height: 70vh;
 	position: relative;
 	
 	.product--image{
@@ -122,6 +122,15 @@
 		.product--content{
 			@include span(12 of 12 last);
 			margin-top: 30px;
+		}
+	}
+
+
+// Services page
+
+	.services {
+		.product--wrap{
+			min-height: 700px;
 		}
 	}
 
