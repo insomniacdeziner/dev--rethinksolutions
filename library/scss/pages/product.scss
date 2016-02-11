@@ -20,7 +20,7 @@
 	position: relative;
 
 	
-	@include between(3, 4) {
+	@include at(3, 4) {
 		min-height: 66vh;
 	}
 
@@ -71,7 +71,7 @@
 	min-height: 85vh;
 	position: relative;
 	
-	@include between(3, 4) {
+	@include at(3, 4) {
 		min-height: 66vh;
 	}
 	

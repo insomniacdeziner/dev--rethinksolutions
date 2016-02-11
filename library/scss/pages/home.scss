@@ -177,6 +177,12 @@
 	font-weight: $bold;
 	line-height: 1.3;
 	
+		
+	@include to(3) {
+		@include font-size(28px);
+	}
+	
+	
 	@include to(1) {
 		line-height: 1;
 	}

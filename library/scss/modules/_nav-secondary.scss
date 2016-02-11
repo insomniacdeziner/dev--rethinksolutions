@@ -58,6 +58,14 @@ Stylesheet: Secondary Nav
 .secondary--inner__nav{
 		margin: 20px auto;
 		@include font-size(14px);
+	
+	
+	@include to(4) {
+		@include font-size(12px);
+		margin:10px auto;
+	}
+	
+	
 	ul {
 		text-align: center;
 		margin: 0 auto;
@@ -77,10 +85,4 @@ Stylesheet: Secondary Nav
 	margin: 0;
 	width: 100% !important;
 	left: 0 !important;
-}
-
-@include breakpoint($mobile){
-	.secondary--inner__nav{
-		display: none;
-	}
 }

@@ -795,6 +795,11 @@ Stylesheet: Secondary Nav
   margin: 20px auto;
   font-size: 14px;
   font-size: 0.875rem; }
+  @media (max-width: 1010px) {
+    .secondary--inner__nav {
+      font-size: 12px;
+      font-size: 0.75rem;
+      margin: 10px auto; } }
   .secondary--inner__nav ul {
     text-align: center;
     margin: 0 auto; }
@@ -811,9 +816,6 @@ Stylesheet: Secondary Nav
   width: 100% !important;
   left: 0 !important; }
 
-@media (max-width: 481px) {
-  .secondary--inner__nav {
-    display: none; } }
 /******************************************************************
 Site Name:
 Author:
@@ -1525,6 +1527,10 @@ Stylesheet: Meteor Slides
   color: #50748A;
   font-weight: 700;
   line-height: 1.3; }
+  @media (max-width: 800px) {
+    .product--title {
+      font-size: 28px;
+      font-size: 1.75rem; } }
   @media (max-width: 400px) {
     .product--title {
       line-height: 1; } }
@@ -1662,7 +1668,7 @@ Stylesheet: Meteor Slides
   background-color: #fff;
   min-height: 85vh;
   position: relative; }
-  @media (min-width: 601px) and (max-width: 1010px) {
+  @media (min-width: 601px) and (max-width: 800px) {
     .product--image__right {
       min-height: 66vh; } }
   @media (max-width: 600px) {
@@ -1699,7 +1705,7 @@ Stylesheet: Meteor Slides
   background-color: #F1F7F4;
   min-height: 85vh;
   position: relative; }
-  @media (min-width: 601px) and (max-width: 1010px) {
+  @media (min-width: 601px) and (max-width: 800px) {
     .product--image__left {
       min-height: 66vh; } }
   @media (max-width: 600px) {
