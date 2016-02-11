@@ -6,8 +6,12 @@
 	padding-top: 12em;
 
 }
-
-#post-52 { /* product page */
+/***********************************
+	
+	product page 
+	
+**********************************/
+#post-52 { 
 	.site--banner__copy{
 		text-align: left;
 		@include span(6 of 12);
@@ -18,13 +22,65 @@
 			@include font-size(32px);
 		}
 		
-		p{
+		.small-text{
 			margin-top: 13px;
+			line-height: 1;
 			font-size: xx-small;
 		}
 	}
 	
+/************* 400-600px  */
+
+	@include between(2, 3) {
+		.site--banner__copy {
+			@include span(8 of 12);
+			padding-top: 29px;		
+			 
+			 h2{
+			 	@include font-size(16px);
+			 	line-height: 1.3;
+			}
+		}
+	}
+	
+/************* up to 400px  */	
+
+	@include to(1) {
+		height: 12em;
+		background-color: $saltpan;
+		
+	img{
+		width: auto;
+		height: 100%;
+		left: 35px;
+	}
+	
+	 .site--banner__copy {
+	 	padding-top: 0;
+	 	@include span(9 of 12);
+	 	left: -8px;
+		padding: 3px 5px 0px 20px;
+		 
+		 h2{
+		 	@include font-size(12px);
+		 	line-height: 1.3;
+		 	
+		}
+		p{
+			margin: 0;
+			padding: 0;
+		}
+		.small-text{
+			margin-top: -10px;
+			@include font-size(6px);
+		}
+ 		}
+ 	}
+ 	
 }
+
+
+
 .background--image_full{
 	background-size: cover;
 	width: 100%;
@@ -62,34 +118,3 @@
 }
 
 
-@include breakpoint($mobile){
-	.page-template-page-products-php .banner{
-		background-color: $saltpan;
-	}
-	
-	.product--image__right .product--image{
-		position: relative !important;
-	}
-
-	#post-52 {
-		font-size: 100%;
-		
-		.background--image_partial{
-			left: 52px;
-		}
-		.site--banner__copy{
-			@include span(8 of 12);
-			padding-top: 10px;
-		
-		h2{
-			margin-bottom: 10px;
-			font-size: 60%;
-		}
-		
-		p{
-			margin-top: 10px;
-		}
-	}
-}
-
-}

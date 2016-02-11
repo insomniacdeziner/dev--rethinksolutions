@@ -25,6 +25,7 @@ the whole project.
 // susy
 @import "susy";
 @import "susy/breakpoint";
+@import 'susy/breakpoint-slicer';
 
 // normalize: http://necolas.github.io/normalize.css/
 @import "partials/normalize";
