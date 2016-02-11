@@ -162,6 +162,11 @@
 		position: relative;
 		top:10px;
 	}
+	@include to(1) {
+		@include font-size(14px);
+		margin-top: 10px;
+	}
+	
 }
 .blog--single{
 	border: 6px solid $saltpan;
