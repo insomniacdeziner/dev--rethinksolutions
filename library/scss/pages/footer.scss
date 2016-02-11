@@ -4,6 +4,10 @@
 	&:first-child{
 		padding-right: 10px;
 	}
+
+	@include to(2) {
+		@include span(12);			
+	}
 }
 
 .footer--about{
@@ -52,16 +56,4 @@
 .copyright{
 	text-align: center;
 	@include font-size(10px);
-}
-
-@include breakpoint($tablet--portrait){
-	.footer--column{
-		@include span(12);	
-	}
-}
-
-@include breakpoint($mobile){
-	.footer--column{
-		@include span(12);	
-	}
 }

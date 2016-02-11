@@ -1579,6 +1579,11 @@ Stylesheet: Meteor Slides
     font-size: 1.125rem;
     line-height: 2;
     margin-bottom: 4em; }
+    @media (min-width: 801px) and (max-width: 1010px) {
+      .marketing-feature__desc .copy {
+        font-size: 14px;
+        font-size: 0.875rem;
+        margin-bottom: 3em; } }
     @media (max-width: 600px) {
       .marketing-feature__desc .copy {
         margin-bottom: 2em;
@@ -1596,6 +1601,10 @@ Stylesheet: Meteor Slides
 .feature--left img {
   width: 57.6271186441%;
   float: left; }
+  @media (min-width: 801px) and (max-width: 1010px) {
+    .feature--left img {
+      width: 57.6271186441%;
+      float: left; } }
   @media (max-width: 800px) {
     .feature--left img {
       width: 100%;
@@ -1605,6 +1614,11 @@ Stylesheet: Meteor Slides
 .feature--left .marketing-feature__desc {
   width: 40.6779661017%;
   float: right; }
+  @media (min-width: 801px) and (max-width: 1010px) {
+    .feature--left .marketing-feature__desc {
+      width: 40.6779661017%;
+      float: left;
+      padding-top: 3em; } }
   @media (max-width: 800px) {
     .feature--left .marketing-feature__desc {
       width: 100%;
@@ -1625,6 +1639,11 @@ Stylesheet: Meteor Slides
   width: 40.6779661017%;
   float: left;
   float: right; }
+  @media (min-width: 801px) and (max-width: 1010px) {
+    .feature--right .marketing-feature__desc {
+      width: 40.6779661017%;
+      float: left;
+      padding-top: 3em; } }
   @media (max-width: 800px) {
     .feature--right .marketing-feature__desc {
       width: 100%;
@@ -1798,6 +1817,9 @@ Stylesheet: Meteor Slides
   color: #50748A; }
   .blog a:hover, .blog a:focus {
     color: #462C6B; }
+@media (min-width: 801px) and (max-width: 1010px) {
+  .blog {
+    margin-bottom: 2em; } }
 
 .blog--featured {
   margin-bottom: 40px;
@@ -2171,6 +2193,12 @@ Stylesheet: Search
   float: left; }
   .footer--column:first-child {
     padding-right: 10px; }
+  @media (max-width: 600px) {
+    .footer--column {
+      width: 100%;
+      float: left;
+      margin-left: 0;
+      margin-right: 0; } }
 
 .footer--about {
   padding-right: 20px; }
@@ -2211,18 +2239,6 @@ Stylesheet: Search
   font-size: 10px;
   font-size: 0.625rem; }
 
-@media (min-width: 768px) and (max-width: 1029px) {
-  .footer--column {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0; } }
-@media (max-width: 481px) {
-  .footer--column {
-    width: 100%;
-    float: left;
-    margin-left: 0;
-    margin-right: 0; } }
 /*********************
 BASE (MOBILE) SIZE
 This are the mobile styles. It's what people see on their phones. If

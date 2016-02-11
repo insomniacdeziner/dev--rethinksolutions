@@ -6,6 +6,10 @@
 	  		color: $jacarta;
 	  		} 
 	}
+	
+	@include at(4) {
+		margin-bottom: 2em;
+	}
 }
 .blog--featured{
 	margin-bottom: 40px;
