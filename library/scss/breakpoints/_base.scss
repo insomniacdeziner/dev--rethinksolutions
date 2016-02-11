@@ -168,7 +168,11 @@ HEADER STYLES
 		border-top: 1px dotted $saltpan;
 		font-weight: $normal;
 		
-		@include to(1) {
+		@include at(3) {
+			@include font-size(12px);
+		}
+		
+		@include to(2) {
 			@include font-size(10px);
 		}
 	}

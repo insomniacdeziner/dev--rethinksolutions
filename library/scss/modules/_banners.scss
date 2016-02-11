@@ -46,10 +46,10 @@
 		height: 12em;
 		background-color: $saltpan;
 		
-	img{
-		width: auto;
-		height: 100%;
-	}
+		img{
+			width: auto;
+			height: 100%;
+		}
 	
 	 .site--banner__copy {
 	 	padding-top: 0;
@@ -67,9 +67,10 @@
 			padding: 0;
 		}
 		.small-text{
-			margin-top: -10px;
-			@include font-size(6px);
-		}
+			position: relative;
+			bottom:10px;
+			@include font-size(4px);
+			}
  		}
  	}
  	

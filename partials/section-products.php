@@ -51,10 +51,7 @@
 						</div>
 					</div>
 					<div class="product--wrap product--image__right">
-						<div class="product--image">
-							<?php $three_image = get_sub_field('section_three_image'); ?>
-						   <img src="<?php echo $three_image['url']; ?>" alt="<?php echo $three_image['alt'] ?>" />
-						</div>
+				
 						<div class="wrap">	
 							<div class="product--content">
 								<a name="section3"></a>
@@ -64,6 +61,11 @@
 									<?php the_sub_field('section_three_content'); ?>
 								</div>
 							</div>
+						</div>
+						
+						<div class="product--image">
+							<?php $three_image = get_sub_field('section_three_image'); ?>
+						   <img src="<?php echo $three_image['url']; ?>" alt="<?php echo $three_image['alt'] ?>" />
 						</div>
 					</div>
 					<div class="product--wrap product--image__left">	
