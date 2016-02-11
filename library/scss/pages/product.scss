@@ -1,6 +1,10 @@
 %product--content-placeholder{
 	margin-top: 150px;
 	
+	@include to(1) {
+		margin-top: 3em;
+	}
+	
 	h2{
 		margin-top: 0;
 	}
@@ -9,20 +13,40 @@
 		line-height: 1.8;
 	}
 }
+
 .product--image__right{
 	background-color: $white;
 	min-height: 85vh;
 	position: relative;
 	
+	@include to(1) {
+		padding-bottom: 6em;
+	}
+	
+	
 	.product--image{
 		position: absolute;
 		bottom: -6px;
 		right:0;
+		
+		@include to(1) {
+			position: static;
+			
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
 	}
 	
 	.product--content{
 		@extend %product--content-placeholder;
 		@include span(5 of 12 first);
+		
+		@include to(1) {
+			@include span(12);
+		
+		}
 	}
 
 }
@@ -32,134 +56,33 @@
 	min-height: 85vh;
 	position: relative;
 	
+	@include to(1) {
+		padding-bottom: 6em;
+	}
+	
 	.product--image{
 		position: absolute;
 		bottom: -6px;
 		left:0;
+		
+		@include to(1) {
+			position: static;
+			
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
 	}
 		
 	.product--content{
 		@extend %product--content-placeholder;
 		@include span(5 of 12 last);	
-	}
-}
-
-@include breakpoint($desktop--large){
-	
-	#post-52 .site--banner__copy {
-    	padding-top: 14.5em;
-    }
-    .product--image__left{
-	  	.product--content{
-			@include push(1);
-		}
-		.product--image{
-			left: 149px;
-		}
-	}
-	
-  	.product--image__right{
-	  	.product--content{
-			@include push(1);
-		}
-		.product--image{
-			right: 149px;
+		
+		@include to(1) {
+			@include span(12);
 		}
 	}
 }
 
-@include breakpoint($tablet--portrait){
-	
-	
-	.product--image__right{
-		min-height: 65vh;
-		
-		.product--image{
-			@include span(6 of 12 last);
-		}
-		
-		.product--content{
-			@include span(6 of 12 first);
-		}
-	}
-	
-	.product--image__left{
-		min-height: 65vh;
-		
-		.product--image{
-			@include span(6 of 12 first);
-			left: -38px;
-			img{
-				position: relative;
-				left: -295px;
-			}
-			
-		}
-		
-		.product--content{
-			@include span(6 of 12 last);
-		}
-	}
-	
-	.product--image__right .product--content, .product--image__left .product--content {
-	    margin-top: 200px;
-	}
-}
-
-
-@include breakpoint($mobile){
-	
-	.product--image__right{
-		.product--image{
-			@include span(8 of 12 first);
-			margin: 0 auto;
-			img{
-				width: 100%;
-				height: auto;
-			}
-		}
-		.product--content{
-			@include span(12 of 12 last);
-			margin-top: 50px;
-		}
-	}
-	
-	.content--left > div:nth-child(3), .content--right > div:nth-child(3){
-			height: 800px;
-	}
-	.content--right > div:nth-child(5){
-		height: 550px;
-	}
-	.product--image__left{
-		height: 480px;
-		margin-bottom: 40px;
-		
-		.product--image{
-			@include span(8 of 12 first);
-			margin: 0 auto;
-			bottom: -5px;
-		
-			
-			img{
-				width: 100%;
-				height: auto;
-			}
-		}
-		
-		.product--content{
-			@include span(12 of 12 last);
-			margin-top: 30px;
-		}
-	}
-
-
-// Services page
-
-	.services {
-		.product--wrap{
-			min-height: 700px;
-		}
-	}
-
-}
 

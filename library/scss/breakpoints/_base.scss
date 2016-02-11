@@ -18,11 +18,12 @@ html
   {
     overflow-y:scroll;
     overflow-x: hidden;	
+    font-size: 100%;
   }
 body {
 	line-height: 1.5;
 	color: $text-color;
-	font-size: 100%;
+	@include font-size(14px);
   	-webkit-font-smoothing: antialiased;
   	-moz-osx-font-smoothing: grayscale;
   	font-family: $sans-serif;
@@ -166,6 +167,10 @@ HEADER STYLES
 	#breadcrumbs{
 		border-top: 1px dotted $saltpan;
 		font-weight: $normal;
+		
+		@include to(1) {
+			@include font-size(10px);
+		}
 	}
 }
 
