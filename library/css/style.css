@@ -652,6 +652,30 @@ CROSS BROWSER OPACITY
     display: block;
     clear: both; }
 
+@media (min-width: 601px) {
+  .page--sidebar {
+    width: 66.1016949153%;
+    float: left; } }
+@media (max-width: 400px) {
+  .page--sidebar {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0; } }
+
+@media (min-width: 601px) {
+  .sidebar {
+    margin-top: 6.2em;
+    width: 23.7288135593%;
+    float: right; } }
+@media (max-width: 400px) {
+  .sidebar {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0; } }
+
 /*********************
 IMPORTING MODULES
 Modules are reusable blocks or elements we use throughout the project.
@@ -877,9 +901,9 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   font-family: "Open Sans", sans-serif;
   text-decoration: none;
   color: #fff;
-  font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 34px;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 28px;
   font-weight: 600;
   padding: 5px 24px;
   border-radius: 4px;
@@ -894,6 +918,13 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
     background-color: #40bdbb; }
   .blue-btn:active, .comment-reply-link:active, #submit:active, .btn__green:active, .btn:active, .btn__green-border:active, .btn-large:active, .request-demo-btn:active, .excerpt-read-more:active, .marketing--request-demo a:active, .casestudy--btn:active, .whitepaper--btn:active {
     top: 1px; }
+  @media (max-width: 1010px) {
+    .blue-btn, .comment-reply-link, #submit, .btn__green, .btn, .btn__green-border, .btn-large, .request-demo-btn, .excerpt-read-more, .marketing--request-demo a, .casestudy--btn, .whitepaper--btn {
+      font-size: 12px;
+      font-size: 0.75rem;
+      padding: 1px 15px;
+      line-height: 25px;
+      margin-bottom: 10px; } }
 
 /*
 An example button.
@@ -1863,13 +1894,6 @@ Stylesheet: Meteor Slides
     .blog--category a:hover {
       color: #65CBC9; }
 
-.blog--featured__whitepaper {
-  background-color: #fbfdfc;
-  border: 1px solid #e1eee7;
-  text-align: center;
-  padding: 10px 20px 30px 15px;
-  margin-bottom: 20px; }
-
 .cat-item {
   color: #65CBC9;
   font-weight: 700; }
@@ -1882,6 +1906,10 @@ Stylesheet: Meteor Slides
     text-transform: uppercase; }
     .cat-item a:hover {
       color: #462C6B; }
+  @media (max-width: 800px) {
+    .cat-item {
+      font-size: 12px;
+      font-size: 0.75rem; } }
 
 /*********************************
 	
@@ -1977,11 +2005,6 @@ Stylesheet: Meteor Slides
       margin-left: 0;
       margin-right: -100%;
       clear: none; } }
-.sidebar {
-  margin-top: 6.2em;
-  width: 23.7288135593%;
-  float: right; }
-
 .blog .sidebar {
   margin-top: 1.5em; }
 
@@ -1989,6 +2012,39 @@ Stylesheet: Meteor Slides
   background-color: #F1F7F4;
   padding: 10px;
   margin-bottom: 30px; }
+
+.blog--featured__whitepaper {
+  background-color: #fbfdfc;
+  border: 1px solid #e1eee7;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 30px; }
+  .blog--featured__whitepaper img {
+    width: 100%;
+    height: auto; }
+  .blog--featured__whitepaper p {
+    padding: 0 10px; }
+    @media (max-width: 800px) {
+      .blog--featured__whitepaper p {
+        font-size: 12px;
+        font-size: 0.75rem; } }
+
+.widget_search {
+  border: 1px solid #e1eee7;
+  padding: 20px 13px 30px 6px;
+  margin-bottom: 20px; }
+  .widget_search label {
+    font-weight: 600;
+    text-transform: uppercase; }
+  .widget_search input {
+    margin-top: 10px;
+    width: 100%; }
+    @media (min-width: 1011px) {
+      .widget_search input {
+        width: 93%; } }
+    @media (max-width: 1010px) {
+      .widget_search input {
+        width: 87%; } }
 
 .contact-us .background-image {
   height: 40vh; }
@@ -2714,23 +2770,6 @@ SIDEBARS & ASIDES
       /* deep nesting */ }
       .widget ul li a {
         color: #707C7C; }
-
-.widget_search {
-  border: 1px solid #e1eee7;
-  padding: 20px 20px 30px 15px;
-  margin-bottom: 20px; }
-  .widget_search label {
-    font-weight: 600;
-    text-transform: uppercase; }
-  .widget_search input {
-    width: 226px;
-    margin-top: 10px; }
-  .widget_search .btn__green {
-    width: 100%;
-    padding: 2px;
-    font-size: 12px;
-    font-size: 0.75rem;
-    border: 2px solid #65CBC9; }
 
 .no-widgets {
   background-color: #fff;

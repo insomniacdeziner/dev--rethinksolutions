@@ -30,8 +30,8 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   font-family: $sans-serif;
   text-decoration: none;
   color: $white;
-  @include font-size(18px);
-  line-height: 34px;
+  @include font-size(16px);
+  line-height: 28px;
   font-weight: $semi-bold;
   padding: 5px 24px;
   border-radius: 4px;
@@ -51,6 +51,14 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   &:active {
     top: 1px; // adds a tiny hop to the click
   } // end active
+
+
+	@include to(4) {
+		@include font-size(12px);
+		padding: 1px 15px;
+		line-height: 25px;
+		margin-bottom: 10px;
+	}
 
 } // end .button
 

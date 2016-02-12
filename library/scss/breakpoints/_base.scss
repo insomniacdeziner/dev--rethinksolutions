@@ -163,7 +163,7 @@ HEADER STYLES
 	font-weight: $semi-bold;
 	@include font-size(14px);
 	margin: 10px 0 18px;
-	
+
 	#breadcrumbs{
 		border-top: 1px dotted $saltpan;
 		font-weight: $normal;
@@ -807,27 +807,6 @@ SIDEBARS & ASIDES
 
 	}
 
-	.widget_search{
-		border: 1px solid darken($saltpan, 5%);
-		padding: 20px 20px 30px 15px;
-		margin-bottom: 20px;
-		
-		label{
-			font-weight: $semi-bold;
-			text-transform: uppercase;
-		}
-		
-		input{
-			width: 226px;
-			margin-top: 10px;
-		}
-		.btn__green{
-			width: 100%;
-			padding: 2px;
-			@include font-size(12px);
-			border: 2px solid $downy;
-		}
-	}
 	.no-widgets {
 		background-color: $white;
 		padding: 1.5em;

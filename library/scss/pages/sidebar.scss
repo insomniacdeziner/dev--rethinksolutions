@@ -1,7 +1,4 @@
-.sidebar{
-	margin-top: 6.2em;
-	@include span(3 of 12 last);
-}
+// main side bar moved to grid 
 
 .blog .sidebar{
 	margin-top: 1.5em;
@@ -11,4 +8,53 @@
 	background-color: $saltpan;
 	padding: 10px;
 	margin-bottom: 30px;
+}
+
+.blog--featured__whitepaper{
+	background-color: lighten($saltpan, 3%);
+	border: 1px solid darken($saltpan, 5%);
+	text-align: center;
+	margin-bottom: 20px;
+	padding-bottom: 30px;
+		
+	img{
+		width: 100%;
+		height: auto;
+	}
+	
+	p{
+		padding: 0 10px;
+		
+		@include to(3) {
+			@include font-size(12px);
+		}
+		
+	}
+
+}
+
+
+.widget_search{
+	border: 1px solid darken($saltpan, 5%);
+	padding: 20px 13px 30px 6px;
+	margin-bottom: 20px;
+	
+	label{
+		font-weight: $semi-bold;
+		text-transform: uppercase;
+	}
+	
+	input{
+		margin-top: 10px;
+		width: 100%;
+	
+	@include at(5) {
+		width: 93%;
+	}	
+	
+	@include to(4) {
+		width: 87%;
+	}	
+		
+	}
 }

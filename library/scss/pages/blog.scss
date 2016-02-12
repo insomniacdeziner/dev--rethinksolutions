@@ -91,13 +91,6 @@
 }
 
 
-.blog--featured__whitepaper{
-	background-color: lighten($saltpan, 3%);
-	border: 1px solid darken($saltpan, 5%);
-	text-align: center;
-	padding: 10px 20px 30px 15px;
-	margin-bottom: 20px;
-}
 
 
 .cat-item {
@@ -115,6 +108,10 @@
 			color: $link-hover;
 		}
 	}
+	
+		@include to(3) {
+			@include font-size(12px);
+		}
 }
 
 /*********************************

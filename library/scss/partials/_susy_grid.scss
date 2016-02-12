@@ -23,6 +23,30 @@ $susy: (
   margin: 0 auto;
 }
 
+.page--sidebar{
+	@include from(3) {
+		@include span(8 of 12);
+	}
+	
+	@include to(1) {
+		@include span(12);
+	}
+}
+
+.sidebar{
+		
+	@include from(3) {
+		margin-top: 6.2em;
+		@include span(3 of 12 last);
+	}
+	
+	@include to(1) {
+		@include span(12);
+		margin-top: 0;
+	}
+	
+}
+
 $desktop--large: min-width 1600px;
 $tablet--portrait: 768px 1029px;
 $tablet--large: 980px 1280px;
