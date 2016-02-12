@@ -2,6 +2,9 @@
 
 .blog .sidebar{
 	margin-top: 1.5em;
+	@include to(2) {
+		clear: both;
+	}	
 }
 
 .featured--whitepaper{
