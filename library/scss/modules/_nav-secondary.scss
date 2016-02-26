@@ -47,6 +47,8 @@ Stylesheet: Secondary Nav
         border-bottom-color: transparent;
         cursor: default;
 		border-top: 6px solid $downy;
+		border-right: 6px solid $downy;
+		line-height: 3.6;
 		display: block;
       }
     }

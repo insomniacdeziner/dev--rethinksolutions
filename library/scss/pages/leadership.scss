@@ -1,0 +1,24 @@
+.leadership{
+	display: block;
+	clear: both;
+	min-height: 100%;
+	margin-bottom: 40px;
+	@include span(10 of 12);
+	@include push(1);
+}
+.leadership--name h2{
+	margin-bottom: 0;	
+}
+.leadership--title{
+	color: $cerulean;
+	font-weight: $semi-bold;
+}
+.leadership--image{
+	@include span(3 of 10);
+	float: left;
+	padding-top: 3.3em;
+}
+.leadership--content{
+	@include span(7 of 10);
+	float: left;
+}

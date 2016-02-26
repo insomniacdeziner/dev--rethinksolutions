@@ -1,5 +1,9 @@
 // main side bar moved to grid 
-
+.large--heading{
+	@include font-size(37px);
+	font-weight: $bold;
+}
+ 
 .blog .sidebar{
 	margin-top: 1.5em;
 	@include to(2) {

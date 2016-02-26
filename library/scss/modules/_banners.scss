@@ -92,26 +92,5 @@
     z-index: 2;
 }
 
-@include breakpoint($tablet--portrait){
-	#post-52 { /* product page */
-
-		font-size: 60%;
-		
-		.site--banner__copy{
-			text-align: left;
-			@include span(7 of 12);
-			padding-top: 47px;
-			
-			h2{
-				@include font-size(24px);
-			}
-			
-			p{
-				margin-top: 10px;
-			}
-		}
-	}
-
-}
 
 

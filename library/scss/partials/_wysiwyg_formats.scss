@@ -2,7 +2,7 @@
 	color: $jacarta;
 }
 .small-text{
-	@include font-size(10px);
+	@include font-size(9px);
 }
 .large-text {
    @include font-size(28px);

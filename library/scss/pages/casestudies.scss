@@ -52,7 +52,7 @@
 	padding-right: 15px;
 }
 
-@include breakpoint($mobile){
+@include to(1) {
 	.casestudy--content{
 		@include gallery(12 of 12);
 		clear: both !important;

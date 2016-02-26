@@ -236,7 +236,7 @@
 
 
 
-@include breakpoint($mobile){
+@include to(1) {
 	.blog--post{
 		@include gallery(12);
 		float: none;

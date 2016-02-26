@@ -65,6 +65,8 @@ $lato:              'Lato', $sans-serif;
 some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
 */
+
+
 p {
   -ms-word-wrap: break-word;
   word-break: break-word; //non-standart css for webkit
@@ -83,12 +85,9 @@ p {
       -ms-font-feature-settings: "liga", "dlig";
        -o-font-feature-settings: "liga", "dlig";
           font-feature-settings: "liga", "dlig";
+   margin-bottom: 1.3em;
 }
 
-.large--heading{
-	@include font-size(30px);
-	font-weight: $bold;
-}
 
 .title--border{
     width: 60px;

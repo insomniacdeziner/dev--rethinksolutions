@@ -7,12 +7,12 @@ Stylesheet: Nav
 	@include span(3 of 12);
 	padding: 12px 0;
 	display: block;
-	
-	@include breakpoint($mobile){
-			width: span(full);
-			text-align: center;  
-			margin-top: 1em;
-		}
+		
+	@include to(1) {
+		width: span(full);
+		text-align: center;  
+		margin-top: 1em;
+	}
 }
 
 
@@ -110,7 +110,8 @@ Stylesheet: Nav
 	}  /* end current highlighters */
 
 
-	@include breakpoint($mobile){
+	@include to(1) {
+
 	  	@include span(12);
 	  	
 	  	

@@ -40,7 +40,7 @@
 	margin-left: 18px;
 }
 
-@include breakpoint($mobile){
+@include to(1) {
 	.whitepaper--content{
 		@include gallery(12 of 12);
 		clear: both !important;

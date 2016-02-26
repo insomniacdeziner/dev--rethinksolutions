@@ -1,5 +1,8 @@
 // home page styles
-
+.home .blog{
+	height: 100%;
+	margin-bottom: 50px;
+}
 .marketing{
 	width: 100%;
 	@include span(12);
@@ -172,7 +175,7 @@
 
 }
 .product--title{
-	@include font-size(32px);
+	@include font-size(37px);
 	color: $smaltblue;
 	font-weight: $bold;
 	line-height: 1.3;
@@ -201,7 +204,7 @@
 
 }
 .product--title__description{
-	@include font-size(18px);
+	@include font-size(21px);
 	position: relative;
     bottom: 15px;
 
