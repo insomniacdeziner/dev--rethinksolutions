@@ -13,8 +13,6 @@
 		<?php get_template_part('partials/section', 'contact-details'); ?> 
 		<?php get_template_part('partials/section', 'clients'); ?> 
 	</div>
-		<?php get_template_part('partials/section', 'request-demo'); ?> 	
-
 
 </main>
 

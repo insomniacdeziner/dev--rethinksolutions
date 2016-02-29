@@ -5,8 +5,10 @@
 	     <p><span itemprop="streetAddress">4950 Yonge Street, Suite 2308</span><br>
 	     <span itemprop="addressLocality">Toronto</span>,
 	     <span itemprop="addressRegion">Ontario</span><br>
-	     <span itemprop="postalCode">M2N 6K1</span>
-	   </div>
-	  <span itemprop="telephone">416-224-8354</span></p>
+	     <span itemprop="postalCode">M2N 6K1</span><br><br>
+	   
+	  <span itemprop="telephone">416-224-8354</span><br>
+	  <span itemprop="telephone">1-877-454-iTAM (4826)</span></div>
+	  </p>
 	</div>		
 </section>

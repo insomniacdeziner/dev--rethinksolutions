@@ -7,32 +7,35 @@ Stylesheet: Secondary Nav
 	width: 100%;
 	margin-bottom: 20px;
 	display: table;
-
+	background-color: lighten($saltpan, 2%);
+	margin-bottom: -1px;
 }
 .nav-tabs {
-	width: 100%;
+	margin: 0 auto;
 	display: table;
 	text-indent: 0;
 	padding-left: 0;	
+	text-align: center;
 	
 	> li {
-	    float: left;
-	    margin-bottom: -1px;
-		width: 50%;
+		float: left;
 		text-align: center;
-		background-color: $saltpan;
+		background-color: darken($saltpan, 2%);
 		line-height: 4;
 		list-style-type: none;
+		
 	
-    > a {
-      text-transform: uppercase;
-      font-weight: $bold;
-	  color: $smaltblue;
-      
-     &:hover {
-        color: $jacarta;
-        
-      }
+	    > a {
+	      text-transform: uppercase;
+	      font-weight: $bold;
+		  color: $smaltblue;
+		  
+	      padding: 0 30px;
+	      
+	     &:hover {
+	        color: $jacarta;
+	        
+	      }
 	  
 
     }
@@ -46,10 +49,12 @@ Stylesheet: Secondary Nav
         background-color: $white;
         border-bottom-color: transparent;
         cursor: default;
-		border-top: 6px solid $downy;
-		border-right: 6px solid $downy;
-		line-height: 3.6;
+		border-top: 2px solid $downy;
+		border-left: 2px solid $downy;
+		border-right: 2px solid $downy;
+		line-height: 3.89;
 		display: block;
+		
       }
     }
   }
