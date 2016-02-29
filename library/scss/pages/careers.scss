@@ -1,0 +1,16 @@
+.careers{
+	width: span(8);
+	margin: 0 auto;
+}
+
+.careers--description{
+	> div{
+		margin: 20px 0 40px;
+	}
+	
+	.careers--company{
+		border-top: 2px dotted $saltpan;
+		margin-top: 30px;
+		padding-top: 20px;
+	}
+}

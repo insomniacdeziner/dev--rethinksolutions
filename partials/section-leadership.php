@@ -10,7 +10,7 @@
 						<h2>
 							<span class="title--border"></span>	<?php the_sub_field('leadership_name'); ?>
 						</h2>
-						<span class="leadership--title"><?php the_sub_field('leadership_title'); ?>
+						<span class="leadership--title"><?php the_sub_field('leadership_title'); ?></span>
 					</div>
 					<div class="leadership--description">
 						

@@ -2159,6 +2159,17 @@ Stylesheet: Meteor Slides
 .contact--form__textarea-wrap {
   clear: both; }
 
+.careers {
+  width: 66.1016949153%;
+  margin: 0 auto; }
+
+.careers--description > div {
+  margin: 20px 0 40px; }
+.careers--description .careers--company {
+  border-top: 2px dotted #F1F7F4;
+  margin-top: 30px;
+  padding-top: 20px; }
+
 #casestudies {
   margin-bottom: 3em; }
 

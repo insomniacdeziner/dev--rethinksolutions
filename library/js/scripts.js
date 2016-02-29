@@ -148,5 +148,17 @@ $('.nav--left').click(function(){
 });
 
 
+// Careers Page
+
+$('.careers--description').hide();  
+
+$('.careers--title').click(function(){
+		$(this).next(".careers--description").toggle("fast");
+});
+
+
+
+
+
 
 }); /* end of as page load scripts */
