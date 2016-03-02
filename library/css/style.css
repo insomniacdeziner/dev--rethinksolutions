@@ -907,7 +907,7 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
-.blue-btn, .comment-reply-link, #submit, .btn__green, .btn, .btn__green-border, .btn-large, .request-demo-btn, .excerpt-read-more, .marketing--request-demo a, .casestudy--btn, .whitepaper--btn {
+.blue-btn, .comment-reply-link, #submit, .btn__green, .btn, .btn__green-border, .btn__link, .btn-large, .request-demo-btn, .excerpt-read-more, .marketing--request-demo a, .casestudy--btn, .whitepaper--btn {
   display: inline-block;
   position: relative;
   font-family: "Open Sans", sans-serif;
@@ -923,12 +923,12 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   cursor: pointer;
   -webkit-transition: background-color 0.14s ease-in-out;
   transition: background-color 0.14s ease-in-out; }
-  .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .btn__green:hover, .btn:hover, .btn__green-border:hover, .btn-large:hover, .request-demo-btn:hover, .excerpt-read-more:hover, .marketing--request-demo a:hover, .casestudy--btn:hover, .whitepaper--btn:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus, .btn__green:focus, .btn:focus, .btn__green-border:focus, .btn-large:focus, .request-demo-btn:focus, .excerpt-read-more:focus, .marketing--request-demo a:focus, .casestudy--btn:focus, .whitepaper--btn:focus {
+  .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .btn__green:hover, .btn:hover, .btn__green-border:hover, .btn__link:hover, .btn-large:hover, .request-demo-btn:hover, .excerpt-read-more:hover, .marketing--request-demo a:hover, .casestudy--btn:hover, .whitepaper--btn:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus, .btn__green:focus, .btn:focus, .btn__green-border:focus, .btn__link:focus, .btn-large:focus, .request-demo-btn:focus, .excerpt-read-more:focus, .marketing--request-demo a:focus, .casestudy--btn:focus, .whitepaper--btn:focus {
     color: #fff;
     text-decoration: none;
     outline: none;
     background-color: #40bdbb; }
-  .blue-btn:active, .comment-reply-link:active, #submit:active, .btn__green:active, .btn:active, .btn__green-border:active, .btn-large:active, .request-demo-btn:active, .excerpt-read-more:active, .marketing--request-demo a:active, .casestudy--btn:active, .whitepaper--btn:active {
+  .blue-btn:active, .comment-reply-link:active, #submit:active, .btn__green:active, .btn:active, .btn__green-border:active, .btn__link:active, .btn-large:active, .request-demo-btn:active, .excerpt-read-more:active, .marketing--request-demo a:active, .casestudy--btn:active, .whitepaper--btn:active {
     top: 1px; }
 
 /*
@@ -964,6 +964,15 @@ and it will create a button dependant on those variables.
   .btn__green-border:active {
     background-color: #3a2559;
     border: 1px solid #462C6B; }
+
+.btn__link {
+  color: #65CBC9;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase; }
+  .btn__link:hover, .btn__link:focus {
+    color: #3d265d;
+    background-color: transparent; }
 
 .btn-large {
   padding: 10px 30px;
@@ -1433,7 +1442,8 @@ Stylesheet: Meteor Slides
     clear: none; }
   .marketing figure img {
     width: 100%;
-    height: auto; }
+    height: auto;
+    margin-bottom: 0.75em; }
   @media (min-width: 601px) and (max-width: 800px) {
     .marketing figure {
       height: 257px; } }
@@ -1451,20 +1461,18 @@ Stylesheet: Meteor Slides
 
 .marketing figcaption {
   text-align: center;
-  margin: 13px 0 4px;
   text-transform: uppercase;
   font-weight: 300; }
   .marketing figcaption p {
     padding: 0;
-    margin: 0;
-    line-height: 1.3; }
+    margin: 0; }
 
 .marketing--boxes {
   position: relative;
   z-index: 99;
   background: #F1F7F4;
   padding: 12px 0;
-  height: 330px; }
+  height: 325px; }
 
 .marketing--banner__copy {
   position: absolute;
@@ -1553,22 +1561,21 @@ Stylesheet: Meteor Slides
   margin: 2em auto 60px; }
 
 .product--title {
-  font-size: 37px;
-  font-size: 2.3125rem;
+  font-size: 36px;
+  font-size: 2.25rem;
   color: #50748A;
-  font-weight: 700;
-  line-height: 1.3; }
+  font-weight: 700; }
   @media (max-width: 800px) {
     .product--title {
-      font-size: 28px;
-      font-size: 1.75rem; } }
+      font-size: 24px;
+      font-size: 1.5rem; } }
   @media (max-width: 400px) {
     .product--title {
       line-height: 1; } }
 
 .product--title__subtitle {
-  font-size: 28px;
-  font-size: 1.75rem;
+  font-size: 24px;
+  font-size: 1.5rem;
   color: #50748A;
   font-weight: 600; }
   @media (max-width: 800px) {
@@ -1577,8 +1584,8 @@ Stylesheet: Meteor Slides
       padding-bottom: 22px; } }
 
 .product--title__description {
-  font-size: 21px;
-  font-size: 1.3125rem;
+  font-size: 24px;
+  font-size: 1.5rem;
   position: relative;
   bottom: 15px; }
 
@@ -2388,12 +2395,11 @@ GENERAL STYLES
 html {
   overflow-y: scroll;
   overflow-x: hidden;
-  font-size: 100%;
-  font-size: 16px;
-  font-size: 1rem; }
+  font-size: 100%; }
 
 body {
-  line-height: 1.5;
+  font-size: 1em;
+  line-height: 1.4;
   color: #3f5c6d;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

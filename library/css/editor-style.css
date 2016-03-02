@@ -620,7 +620,7 @@ body#tinymce.wp-editor {
     display: block;
     position: relative;
     bottom: 10px; }
-  body#tinymce.wp-editor .blue-btn, body#tinymce.wp-editor .btn__green, body#tinymce.wp-editor .btn, body#tinymce.wp-editor .btn__green-border, body#tinymce.wp-editor .btn-large, body#tinymce.wp-editor .request-demo-btn, body#tinymce.wp-editor .excerpt-read-more {
+  body#tinymce.wp-editor .blue-btn, body#tinymce.wp-editor .btn__green, body#tinymce.wp-editor .btn, body#tinymce.wp-editor .btn__green-border, body#tinymce.wp-editor .btn__link, body#tinymce.wp-editor .btn-large, body#tinymce.wp-editor .request-demo-btn, body#tinymce.wp-editor .excerpt-read-more {
     display: inline-block;
     position: relative;
     font-family: "Open Sans", sans-serif;
@@ -636,12 +636,12 @@ body#tinymce.wp-editor {
     cursor: pointer;
     -webkit-transition: background-color 0.14s ease-in-out;
     transition: background-color 0.14s ease-in-out; }
-    body#tinymce.wp-editor .blue-btn:hover, body#tinymce.wp-editor .btn__green:hover, body#tinymce.wp-editor .btn:hover, body#tinymce.wp-editor .btn__green-border:hover, body#tinymce.wp-editor .btn-large:hover, body#tinymce.wp-editor .request-demo-btn:hover, body#tinymce.wp-editor .excerpt-read-more:hover, body#tinymce.wp-editor .blue-btn:focus, body#tinymce.wp-editor .btn__green:focus, body#tinymce.wp-editor .btn:focus, body#tinymce.wp-editor .btn__green-border:focus, body#tinymce.wp-editor .btn-large:focus, body#tinymce.wp-editor .request-demo-btn:focus, body#tinymce.wp-editor .excerpt-read-more:focus {
+    body#tinymce.wp-editor .blue-btn:hover, body#tinymce.wp-editor .btn__green:hover, body#tinymce.wp-editor .btn:hover, body#tinymce.wp-editor .btn__green-border:hover, body#tinymce.wp-editor .btn__link:hover, body#tinymce.wp-editor .btn-large:hover, body#tinymce.wp-editor .request-demo-btn:hover, body#tinymce.wp-editor .excerpt-read-more:hover, body#tinymce.wp-editor .blue-btn:focus, body#tinymce.wp-editor .btn__green:focus, body#tinymce.wp-editor .btn:focus, body#tinymce.wp-editor .btn__green-border:focus, body#tinymce.wp-editor .btn__link:focus, body#tinymce.wp-editor .btn-large:focus, body#tinymce.wp-editor .request-demo-btn:focus, body#tinymce.wp-editor .excerpt-read-more:focus {
       color: #fff;
       text-decoration: none;
       outline: none;
       background-color: #40bdbb; }
-    body#tinymce.wp-editor .blue-btn:active, body#tinymce.wp-editor .btn__green:active, body#tinymce.wp-editor .btn:active, body#tinymce.wp-editor .btn__green-border:active, body#tinymce.wp-editor .btn-large:active, body#tinymce.wp-editor .request-demo-btn:active, body#tinymce.wp-editor .excerpt-read-more:active {
+    body#tinymce.wp-editor .blue-btn:active, body#tinymce.wp-editor .btn__green:active, body#tinymce.wp-editor .btn:active, body#tinymce.wp-editor .btn__green-border:active, body#tinymce.wp-editor .btn__link:active, body#tinymce.wp-editor .btn-large:active, body#tinymce.wp-editor .request-demo-btn:active, body#tinymce.wp-editor .excerpt-read-more:active {
       top: 1px; }
   body#tinymce.wp-editor .blue-btn {
     background-color: #462C6B; }
@@ -669,6 +669,14 @@ body#tinymce.wp-editor {
     body#tinymce.wp-editor .btn__green-border:active {
       background-color: #3a2559;
       border: 1px solid #462C6B; }
+  body#tinymce.wp-editor .btn__link {
+    color: #65CBC9;
+    border: none;
+    background-color: transparent;
+    text-transform: uppercase; }
+    body#tinymce.wp-editor .btn__link:hover, body#tinymce.wp-editor .btn__link:focus {
+      color: #3d265d;
+      background-color: transparent; }
   body#tinymce.wp-editor .btn-large {
     padding: 10px 30px;
     font-size: 32px;

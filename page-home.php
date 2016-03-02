@@ -35,7 +35,7 @@
 							<?php the_sub_field('banner_box_one_text'); ?>
 						</figcaption>
 						<div class="marketing--boxes__btn">
-							<button class="btn btn__green-border" href="<?php the_sub_field('banner_box_one_link'); ?>">Learn More</button>
+							<button class="btn btn__link" href="<?php the_sub_field('banner_box_one_link'); ?>">Learn More</button>
                         </div>
 					</figure>
 					
@@ -46,7 +46,7 @@
 							
 						</figcaption>
 						<div class="marketing--boxes__btn">
-							<button class="btn btn__green-border" href="<?php the_sub_field('banner_box_two_link'); ?>">Learn More</button>
+							<button class="btn btn__link" href="<?php the_sub_field('banner_box_two_link'); ?>">Learn More</button>
 						</div>
 					</figure>
 					
@@ -56,7 +56,7 @@
 							<?php the_sub_field('banner_box_three_text'); ?>
 						</figcaption>
 						<div class="marketing--boxes__btn">
-							<button class="btn btn__green-border" href="<?php the_sub_field('banner_box_three_link'); ?>">Learn More</button>
+							<button class="btn btn__link" href="<?php the_sub_field('banner_box_three_link'); ?>">Learn More</button>
 						</div>
 					</figure>
 			</div>

@@ -118,6 +118,23 @@ and it will create a button dependant on those variables.
 
 } 
 
+.btn__link{
+  @extend %btn; 
+  color: $downy;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  
+  &:hover,
+  &:focus {
+    color: darken($jacarta, 4%);
+	background-color: transparent;
+  } 
+
+}
+
+
+
 .btn-large{
 	@extend %btn;
 	padding: 10px 30px;
