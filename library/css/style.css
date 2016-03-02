@@ -29,6 +29,7 @@ the whole project.
  */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import "http://basehold.it/24";
 article,
 aside,
 details,
@@ -696,16 +697,25 @@ you hate oysters, then the world is your peanut butter & jelly sandwich.
 Stylesheet: Nav
 
 ******************************************************************/
+.header {
+  margin-top: -10px; }
+
+.nav--primary {
+  background-color: #F1F7F4; }
+
 .logo {
   width: 23.7288135593%;
   float: left;
-  padding: 12px 0;
+  padding-top: 12px;
   display: block; }
   @media (max-width: 400px) {
     .logo {
       width: 100%;
       text-align: center;
       margin-top: 1em; } }
+
+.nav--section {
+  height: 72px; }
 
 .nav--secondary .request-demo-btn {
   color: #65CBC9;
@@ -2162,6 +2172,11 @@ Stylesheet: Meteor Slides
 .careers {
   width: 66.1016949153%;
   margin: 0 auto; }
+
+.careers--title {
+  border-bottom: 3px solid #F1F7F4; }
+  .careers--title:hover {
+    color: #65CBC9; }
 
 .careers--description > div {
   margin: 20px 0 40px; }

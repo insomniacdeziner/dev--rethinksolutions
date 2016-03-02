@@ -3,9 +3,17 @@
 Stylesheet: Nav
 
 ******************************************************************/
+.header{
+	margin-top: -10px;
+}
+
+.nav--primary{
+	background-color: $saltpan;
+}
+
 .logo{
 	@include span(3 of 12);
-	padding: 12px 0;
+	padding-top: 12px;
 	display: block;
 		
 	@include to(1) {
@@ -15,7 +23,9 @@ Stylesheet: Nav
 	}
 }
 
-
+.nav--section{
+	height: 72px;
+}
 .nav--secondary{
 	.request-demo-btn {
 		color: $downy;

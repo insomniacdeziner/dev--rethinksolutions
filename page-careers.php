@@ -9,6 +9,11 @@
 <?php get_template_part('partials/section', 'sub-banner'); ?> 
 <div class="wrap">
 	<?php get_template_part('partials/section', 'page-title'); ?> 
+	
+	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+		<?php the_content(); ?>
+	<?php endwhile; endif; ?>
+	
 	<?php // open the WordPress loop
 		if (have_posts()) : while (have_posts()) : the_post();
 

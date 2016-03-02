@@ -3,6 +3,12 @@
 	margin: 0 auto;
 }
 
+.careers--title{
+	border-bottom: 3px solid $saltpan;
+	&:hover{
+		color: $downy;
+	}
+}
 .careers--description{
 	> div{
 		margin: 20px 0 40px;
