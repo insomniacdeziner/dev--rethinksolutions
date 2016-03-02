@@ -779,7 +779,7 @@ Stylesheet: Nav
 
 /* end .nav */
 .ubermenu-responsive-default.ubermenu {
-  border-top: 1px dotted #eeeeee; }
+  border-top: 2px solid #eeeeee; }
 
 .ubermenu-submenu li:hover {
   background-color: #F1F7F4;
@@ -1408,6 +1408,9 @@ Stylesheet: Meteor Slides
   margin-right: 0;
   margin-bottom: -10px; }
 
+.marketing--banner {
+  height: 660px; }
+
 .marketing figure {
   width: 32.2033898305%;
   float: left;
@@ -1460,18 +1463,20 @@ Stylesheet: Meteor Slides
   position: relative;
   z-index: 99;
   background: #F1F7F4;
-  padding: 15px 0; }
+  padding: 12px 0;
+  height: 330px; }
 
 .marketing--banner__copy {
   position: absolute;
   z-index: 9;
   color: #fff;
   text-align: center;
-  padding-top: 12em;
+  padding-top: 10.9375em;
   width: 100%; }
   .marketing--banner__copy h1, .marketing--banner__copy h2 {
     margin: 0;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin: 24px 0; }
   .marketing--banner__copy h1 {
     font-weight: 700; }
   .marketing--banner__copy h2 {
@@ -2463,35 +2468,32 @@ H1, H2, H3, H4, H5 STYLES
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   text-rendering: optimizelegibility;
   font-weight: 500;
-  margin: 1.414em 0 0.5em;
   font-weight: inherit;
-  line-height: 1.2; }
+  line-height: 0.750em; }
   h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
     text-decoration: none; }
 
 h1, .h1 {
-  font-size: 50px;
-  font-size: 3.125rem;
-  line-height: 1.333em; }
+  font-size: 48px;
+  font-size: 3rem; }
 
 h2, .h2 {
-  font-size: 37px;
-  font-size: 2.3125rem;
-  line-height: 1.4em;
+  font-size: 36px;
+  font-size: 2.25rem;
   margin-bottom: 0.375em; }
 
 h3, .h3 {
-  font-size: 28px;
-  font-size: 1.75rem; }
+  font-size: 24px;
+  font-size: 1.5rem; }
 
 h4, .h4 {
-  font-size: 21px;
-  font-size: 1.3125rem;
+  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700; }
 
 h5, .h5 {
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 2px; }
 
