@@ -75,18 +75,18 @@
 			?>
 			<section class="marketing marketing--product">
 				<div class="wrap">
-				<div class="marketing--product__copy">
-					<div class="product--title"><?php the_sub_field('product_title'); ?></div>
-					<div class="product--title__subtitle"><?php the_sub_field('product_sub_title'); ?></div>
-					<div class="product--title__description"><?php the_sub_field('product_description'); ?></div>
-				</div>
+					<div class="marketing--product__copy">
+						<span class="product--title"><?php the_sub_field('product_title'); ?></span>
+						<span class="product--title__subtitle"><?php the_sub_field('product_sub_title'); ?></span>
+						<span class="product--title__description"><?php the_sub_field('product_description'); ?></span>
+					</div>
 					<div class="marketing--product__image">
 						<img src="<?php echo $product_image['url']; ?>" alt="<?php echo $product_image['alt'] ?>" />
 					</div>
 				</div>
 				</div>
 			</section>
-			
+	
 		<?php get_template_part('partials/section', 'clients'); ?> 	
 		
 		
@@ -94,17 +94,19 @@
 				$market_box_imageLeft = get_sub_field('left_image');
 			?>
 			<div class="marketing--feature feature--left">
+				<section class="wrap">
 					<img src="<?php echo $market_box_imageLeft['url']; ?>" alt="<?php echo $market_box_imageLeft['alt'] ?>" />
 					
-				<div class="marketing-feature__desc">
-						<div class="product--title">
-							<span class="title--border"></span>
-							<?php the_sub_field('market_feature_title'); ?>
-						</div>
-						<div class="copy">
-							<?php the_sub_field('left_image_copy'); ?>
-						</div>
-						<a class="btn btn__green-border" href="<?php the_sub_field('feature_button_link'); ?>">Learn More</a>
+					<div class="marketing-feature__desc">
+							<div class="marketing-feature--title">
+								<span class="title--border"></span>
+								<?php the_sub_field('market_feature_title'); ?>
+							</div>
+							<div class="copy">
+								<?php the_sub_field('left_image_copy'); ?>
+							</div>
+							<a class="btn btn__green" href="<?php the_sub_field('feature_button_link'); ?>">Learn More</a>
+					</div>
 				</div>
 			</div>	
 			
@@ -113,40 +115,42 @@
 			?>
 			
 			<div class="marketing--feature feature--right">
-				
-				<img src="<?php echo $market_box_imageRight['url']; ?>" alt="<?php echo $market_box_imageRight['alt'] ?>" />
-			<div class="marketing-feature__desc">
-				<div class="product--title">
-					<span class="title--border"></span>
-					<?php the_sub_field('market_feature_title_right'); ?>
-				</div>
-				<div class="copy">
-					<?php the_sub_field('right_image_copy'); ?>
-				</div>
-				<a class="btn btn__green-border" href="<?php the_sub_field('feature_button_link_right'); ?>">Learn More</a>
-			</div>
+				<section class="wrap">
+					<img src="<?php echo $market_box_imageRight['url']; ?>" alt="<?php echo $market_box_imageRight['alt'] ?>" />
+					<div class="marketing-feature__desc">
+							<div class="marketing-feature--title">
+								<span class="title--border"></span>
+								<?php the_sub_field('market_feature_title_right'); ?>
+								</div>
+								<div class="copy">
+									<?php the_sub_field('right_image_copy'); ?>
+								</div>
+								<a class="btn btn__green" href="<?php the_sub_field('feature_button_link_right'); ?>">Learn More</a>
+							</div>
+					</div>
 			</div>
 			
 			<?php elseif(get_row_layout() == 'market_feature_three' ): 
 				$market_box_imageLast = get_sub_field('featured_last');
 			?>
 			<div class="marketing--feature feature--left">
-				<img src="<?php echo $market_box_imageLast['url']; ?>" alt="<?php echo $market_box_imageLast['alt'] ?>" />
-				
-			<div class="marketing-feature__desc">					
-				<div class="product--title">
-					<span class="title--border"></span>
-						<?php the_sub_field('feature_title_last'); ?>
+				<section class="wrap">
+					<img src="<?php echo $market_box_imageLast['url']; ?>" alt="<?php echo $market_box_imageLast['alt'] ?>" />
+					
+					<div class="marketing-feature__desc">					
+						<div class="marketing-feature--title">
+							<span class="title--border"></span>
+								<?php the_sub_field('feature_title_last'); ?>
+						</div>
+						<div class="copy">
+								<?php the_sub_field('feature_image_copy'); ?>
+						</div>
+						<a class="btn btn__green" href="<?php the_sub_field('feature_button_link'); ?>">Learn More</a>
 					</div>
-					<div class="copy">
-						<?php the_sub_field('feature_image_copy'); ?>
-
-					</div>
-					<a class="btn btn__green-border" href="<?php the_sub_field('feature_button_link'); ?>">Learn More</a>
-			</div>
+				</section>
 			</div>
 
-
+</section>
 
 
 			<?php endif; ?>	

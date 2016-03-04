@@ -6,11 +6,12 @@
 ****************************/
 
 .request--quote{
-	background-image: url('/wp-content/uploads/2016/01/footer-with-city.jpg');
-	background-size: cover;
+	/*background-image: url('/wp-content/uploads/2016/01/footer-with-city.jpg');
+	background-size: cover;*/
+	background-color: $saltpan;
+	border-top: 2px solid $jacarta;
 	width: 100%;
-	min-height: 100vh;
-	padding: 120px 0 60px;
+	padding: 1.5em 0 3em 0;
 	
 	.btn__green{
 		padding: 5px 24px;
@@ -37,10 +38,25 @@
 	width: span(5 of 10);
 	float: left;
 }
-
+.ninja-forms-required-items{
+	font-size: x-small;
+	margin-left: 4px;
+}
+.field-wrap{
+	margin-bottom: 0 !important;
+}
+.textarea-wrap textarea{
+	height: 3em !important;
+}
 
 .ninja-forms-form-wrap input{
-	padding: 6px;
+	padding: 1px 0 1px 8px;
+}
+.ninja-forms-form-wrap label{
+	font-weight: $normal !important;
+}
+.ninja-forms-form .label-above label{
+	margin-bottom: 0;
 }
 
 .field-wrap{

@@ -1,3 +1,10 @@
 .client--logos{
-    margin-bottom: 2.5em;
+    margin: 2.25em;
+}
+
+.client-gallery{
+	@include span(12);
+	img{
+		@include gallery(2 of 12);
+	}
 }

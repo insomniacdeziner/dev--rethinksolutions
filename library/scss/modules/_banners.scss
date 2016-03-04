@@ -12,14 +12,22 @@
 	
 **********************************/
 #post-52 { 
+	background-color: $saltpan;
+	background-color: #F1F7F4;
+	overflow: hidden;
+	
+	img{
+		float: right;
+	}
 	.site--banner__copy{
 		text-align: left;
-		@include span(6 of 12);
-		padding-top: 4.5em;
+		@include span(7 of 12);
+		padding-top: 1.95em;
 
 		h2{
 			font-weight: $light;
-			@include font-size(32px);
+			@include font-size(24px);
+			line-height: 1em;
 		}
 		
 		.small-text{
@@ -86,10 +94,11 @@
 
 .background--image_partial{
 	background-size: cover;
-	width: 100%;
-	height: auto;
+	width: auto;
+	height: 26.25em;
 	position: relative;
     z-index: 2;
+    background-color: #f1f7f5;
 }
 
 

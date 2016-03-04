@@ -10,27 +10,27 @@
 }
 
 .marketing--banner{
-	height: 660px;
+	height: 37.5em;
 }
 
 .marketing figure{
-	@include gallery(4);
-	margin-bottom: gutter();
-	position: relative;
-	z-index: 9;
-	background-color: $white;
-	height: 300px;
-	
-	img{
-		width:100%;
-		height: auto;
-		margin-bottom: 0.75em;
+		@include gallery(4);
+		margin-bottom: gutter();
+		position: relative;
+		z-index: 9;
+		background-color: $white;
+		height: 300px;
+		
+		img{
+			width:100%;
+			height: auto;
+		}
+
+	@include at(3) {
+		height: 257px;	
 	}
-@include at(3) {
-	height: 257px;	
-}
- 
-@include to(1) {
+	 
+	@include to(1) {
 		@include gallery(12 of 12);
 		margin-bottom: 1em;
 		clear: both !important;
@@ -43,10 +43,11 @@
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: $light;
+	margin-bottom: 1.5em;
 	
-	p{
-		padding: 0;
-		margin: 0;
+	> span{
+		line-height: 1.5em;
+		display: block;
 	}
 }
 	
@@ -154,35 +155,38 @@
 }
 
 .marketing--product{
-    min-height: 100%;
-	background-color: $saltpan;
+	    min-height: 100%;
+		background-color: $saltpan;
+		height: 48em;
+		@include between(1, 3) {
 	
-	
-	 
-@include between(1, 3) {
 	img{
-			width: 100%;
-			height: auto;
-		}	
-}
+		width: 100%;
+		height: auto;
+	}	
+	}
 	
 }
 
 .marketing--product__copy{
-	@include font-size(24px);
-	text-align: center;
-	position: relative;
-	z-index: 9;
-	margin: 2em auto 60px;
-
-}
-.product--title{
-	@include font-size(36px);
-	color: $smaltblue;
-	font-weight: $bold;
-	
+		@include font-size(24px);
+		text-align: center;
+		position: relative;
+		z-index: 9;
+		margin-bottom: 1.5em;
 		
-	@include to(3) {
+		> span{
+			display: block;
+		}
+}
+
+.product--title{
+		@include font-size(24px);
+		color: $smaltblue;
+		font-weight: $semi-bold;
+		line-height: 1.9em;
+		margin: 2.25em 0 0 0;	
+		@include to(3) {
 		@include font-size(24px);
 	}
 	
@@ -197,25 +201,31 @@
 		@include font-size(24px);
 		color: $smaltblue;
 		font-weight: $semi-bold;
-
-@include between(1, 3) {
-	line-height: 1em;
-	padding-bottom: 22px;
-}
+		line-height: 0.4em;
+		margin-bottom: 1.3em;
+		
+	@include between(1, 3) {
+		line-height: 1em;
+		padding-bottom: 22px;
+	}
 
 }
 .product--title__description{
 	@include font-size(24px);
-	position: relative;
-    bottom: 15px;
-
+	line-height: 1em;	
+	margin: 0.375em 0 5em;
+	font-weight: $light;
 }
 
 .marketing--product__image{
 	position: relative;
 	z-index: 99;
 	text-align: center;
-	bottom: -6px;
+	
+	img{
+		position: relative;
+		bottom: -14px;
+	}
 	
 	@include between(1, 2) {
 		img{
@@ -227,14 +237,24 @@
 .marketing--feature{
 	width: 100%;
 	clear: both;
-
+	height: 31em;
+	padding: 0.75em 0;
 }
+
+.marketing-feature--title{
+	@include font-size(24px);
+	color: $smaltblue;
+	font-weight: $bold;
+	line-height: 2.25em;
+	margin-top: 4.5em;
+}
+
 .marketing-feature__desc{
 		@include span(6 of 12);
-		padding: 12em 2em 0;
+		
 		
 		.title{
-			@include font-size(32px);
+		
 			text-transform: uppercase;
 			color: $smaltblue;
 			font-weight: $bold;
@@ -243,9 +263,8 @@
 		}
 		
 		.copy{
-			@include font-size(18px);
-			line-height: 2;
-			margin-bottom: 4em;
+			line-height: 1.5em;
+			margin-bottom: 2.25em;
 			
 			@include at(4) {
 				@include font-size(14px);
@@ -266,9 +285,9 @@
 	}
 }
 .feature--left{
-	
+	background: $saltpan;
 	img{
-		@include span(7 of 12);
+		@include span(5 of 12);
 		
 		@include at(4) {
 			@include span(7 of 12);	
@@ -279,7 +298,7 @@
 		}
 	}
 	.marketing-feature__desc{
-		@include span(5 of 12 last);
+		@include span(7 of 12 last);
 		
 		@include at(4) {
 			@include span(5 of 12);	
@@ -294,8 +313,11 @@
 }
 
 .feature--right{
+	
+	background: darken($saltpan, 2%);
 	img{
-		@include span(7 of 12 last);
+		margin-left: 0.75em;
+		@include span(5 of 12 last);
 		
 		@include between(1, 3) {
 			@include span(12);	
@@ -303,7 +325,7 @@
 	}
 	
 	.marketing-feature__desc{
-		@include span(5 of 12);
+		@include span(7 of 12);
 		float: right;
 		
 		@include at(4) {

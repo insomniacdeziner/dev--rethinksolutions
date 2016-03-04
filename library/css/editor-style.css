@@ -615,11 +615,11 @@ body#tinymce.wp-editor {
     margin-bottom: 1.3em; }
   body#tinymce.wp-editor .title--border {
     width: 60px;
-    height: 10px;
+    height: 12px;
     background-color: #462C6B;
     display: block;
     position: relative;
-    bottom: 10px; }
+    line-height: 0.75em; }
   body#tinymce.wp-editor .blue-btn, body#tinymce.wp-editor .btn__green, body#tinymce.wp-editor .btn, body#tinymce.wp-editor .btn__green-border, body#tinymce.wp-editor .btn__link, body#tinymce.wp-editor .btn-large, body#tinymce.wp-editor .request-demo-btn, body#tinymce.wp-editor .excerpt-read-more {
     display: inline-block;
     position: relative;
@@ -651,13 +651,16 @@ body#tinymce.wp-editor {
       background-color: #3a2559; }
   body#tinymce.wp-editor .btn__green {
     background-color: #65CBC9;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    border: 2px solid #40bdbb; }
     body#tinymce.wp-editor .btn__green:hover, body#tinymce.wp-editor .btn__green:focus {
-      background-color: #56c6c4;
-      border: 1px solid #462C6B; }
+      background-color: #F1F7F4;
+      border: 2px solid #3db6b3;
+      color: #462C6B; }
     body#tinymce.wp-editor .btn__green:active {
-      background-color: #52c5c2;
-      border: 1px solid #462C6B; }
+      background-color: #40bdbb;
+      border: 2px solid #3db6b3;
+      color: #462C6B; }
   body#tinymce.wp-editor .btn__green-border {
     color: #65CBC9;
     border: 2px solid #65CBC9;
@@ -693,16 +696,18 @@ body#tinymce.wp-editor {
     text-align: center;
     background-color: #fff; }
   body#tinymce.wp-editor .excerpt-read-more {
-    color: #65CBC9;
-    border: 2px solid #65CBC9;
-    background-color: transparent;
+    background-color: #65CBC9;
     text-transform: uppercase;
+    color: #fff;
+    border: 2px solid #40bdbb;
     display: table;
-    margin-top: 10px;
-    padding: 2px 15px;
-    font-size: 12px;
-    font-size: 0.75rem;
+    margin-top: 0.75em;
+    padding: 2px 0.75em;
     line-height: 25px; }
+    body#tinymce.wp-editor .excerpt-read-more:hover, body#tinymce.wp-editor .excerpt-read-more:focus {
+      background-color: #F1F7F4;
+      border: 2px solid #3db6b3;
+      color: #462C6B; }
   body#tinymce.wp-editor a, body#tinymce.wp-editor a:visited {
     color: #65CBC9;
     /* on hover */

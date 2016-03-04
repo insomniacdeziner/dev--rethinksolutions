@@ -79,16 +79,19 @@ and it will create a button dependant on those variables.
   @extend %btn; 
   background-color: $downy;
   text-transform: uppercase;
+  border: 2px solid darken($downy, 10%);
   
   &:hover,
   &:focus {
-    background-color: darken($downy, 4%);
-    border: 1px solid $jacarta;
+    background-color: $saltpan;
+    border: 2px solid darken($downy, 12%);
+    color: $jacarta;
   } 
 
   &:active {
-    background-color: darken($downy, 5%);
-    border: 1px solid $jacarta;
+    background-color: darken($downy, 10%);
+    border: 2px solid darken($downy, 12%);
+    color: $jacarta;
   } 
 
 } 
@@ -128,7 +131,7 @@ and it will create a button dependant on those variables.
   &:hover,
   &:focus {
     color: darken($jacarta, 4%);
-	background-color: transparent;
+	background-color: transparent
   } 
 
 }
@@ -156,13 +159,19 @@ and it will create a button dependant on those variables.
 
 .excerpt-read-more{
 	@extend %btn;
-	color: $downy;
-	border: 2px solid $downy;
-	background-color: transparent;
+	background-color: $downy;
 	text-transform: uppercase;
+	color: $white;
+	border: 2px solid darken($downy, 10%);
 	display: table;
-	margin-top: 10px;
-	padding: 2px 15px;
-	@include font-size(12px);
+	margin-top: 0.75em;
+	padding: 2px 0.75em;
 	line-height: 25px;
+	
+	 &:hover,
+	 &:focus {
+	    background-color: $saltpan;
+	    border: 2px solid darken($downy, 12%);
+	    color: $jacarta;
+  	} 
 }
