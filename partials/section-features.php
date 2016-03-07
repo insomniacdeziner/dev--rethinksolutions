@@ -1,7 +1,11 @@
+ <?php 
+	 $label = get_sub_field('image_position'); 
+	 $one_image = get_sub_field('featured_image');
+?>
 <section class="feature">
 	<div class="wrap">
-		<div class="featured--image">
-		   <?php $one_image = get_sub_field('featured_image'); ?>
+		
+		<div class="featured--image--<?php echo $label; ?>">
 		   <img src="<?php echo $one_image['url']; ?>" alt="<?php echo $one_image['alt'] ?>" />
 		</div>
 		<div class="featured--item_content">
