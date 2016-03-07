@@ -1,13 +1,13 @@
 
-<section class="secondary--menu">
+<!--<section class="secondary--menu">
 		<ul class="nav-tabs">
 			<li class="nav--left active"><a href="#0"><?php the_sub_field('main_nav_left'); ?></a></li>
 			<li class="nav--right"><a href="#0"><?php the_sub_field('main_nav_right'); ?></a></li>
 		</ul>
-</section>		
+</section>		-->
 
 		<section class="content--left">	
-			<div class="wrap">
+			<!--<div class="wrap">
 				<div class="secondary--inner__nav">
 						<ul>
 							<li class="active"><a href="#section1"><?php the_sub_field('section_one'); ?></a></li>
@@ -16,14 +16,14 @@
 							<li><a href="#section4"><?php the_sub_field('section_four'); ?></a></li>
 						</ul>
 					</div> 
-			</div>
+			</div> -->
 					<div class="product--wrap product--image__right">
-					
-					<div class="product--image">
-						   <?php $one_image = get_sub_field('section_one_image'); ?>
-						   <img src="<?php echo $one_image['url']; ?>" alt="<?php echo $one_image['alt'] ?>" />
-					</div>
 						<div class="wrap">
+							<div class="product--image">
+								   <?php $one_image = get_sub_field('section_one_image'); ?>
+								   <img src="<?php echo $one_image['url']; ?>" alt="<?php echo $one_image['alt'] ?>" />
+							</div>
+						
 							<div class="product--content">
 								<a name="section1"></a>
 								<span class="title--border"></span>
@@ -35,11 +35,12 @@
 						</div>
 					</div>
 					<div class="product--wrap product--image__left">
-						<div class="product--image">
-							<?php $two_image = get_sub_field('section_two_image'); ?>
-						   <img src="<?php echo $two_image['url']; ?>" alt="<?php echo $two_image['alt'] ?>" />
-						</div>
 						<div class="wrap">
+							<div class="product--image">
+								<?php $two_image = get_sub_field('section_two_image'); ?>
+							   <img src="<?php echo $two_image['url']; ?>" alt="<?php echo $two_image['alt'] ?>" />
+							</div>
+						
 							<div class="product--content">
 								<a name="section2"></a>
 								<span class="title--border"></span>
@@ -61,19 +62,21 @@
 									<?php the_sub_field('section_three_content'); ?>
 								</div>
 							</div>
-						</div>
 						
-						<div class="product--image">
-							<?php $three_image = get_sub_field('section_three_image'); ?>
-						   <img src="<?php echo $three_image['url']; ?>" alt="<?php echo $three_image['alt'] ?>" />
+							<div class="product--image">
+								<?php $three_image = get_sub_field('section_three_image'); ?>
+							   <img src="<?php echo $three_image['url']; ?>" alt="<?php echo $three_image['alt'] ?>" />
+							</div>
 						</div>
 					</div>
-					<div class="product--wrap product--image__left">	
-						<div class="product--image">
-							<?php $four_image = get_sub_field('section_four_image'); ?>
-						   <img src="<?php echo $four_image['url']; ?>" alt="<?php echo $four_image['alt'] ?>" />
-						</div>
-						<div class="wrap">
+					
+					<div class="product--wrap product--image__left">
+						<div class="wrap">	
+							<div class="product--image">
+								<?php $four_image = get_sub_field('section_four_image'); ?>
+							   <img src="<?php echo $four_image['url']; ?>" alt="<?php echo $four_image['alt'] ?>" />
+							</div>
+					
 							<div class="product--content">
 								<a name="section4"></a>
 								<span class="title--border"></span>

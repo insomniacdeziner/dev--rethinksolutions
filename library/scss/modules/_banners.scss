@@ -17,12 +17,13 @@
 	overflow: hidden;
 	
 	img{
-		float: right;
+		@include push(2);
 	}
+	
 	.site--banner__copy{
 		text-align: left;
-		@include span(7 of 12);
-		padding-top: 1.95em;
+		@include span(5 of 12);
+		padding-top: 6em;
 
 		h2{
 			font-weight: $light;
@@ -94,8 +95,7 @@
 
 .background--image_partial{
 	background-size: cover;
-	width: auto;
-	height: 26.25em;
+	height: 37.5em;
 	position: relative;
     z-index: 2;
     background-color: #f1f7f5;

@@ -1,0 +1,19 @@
+.feature{
+	padding: 3em 0 4.7em;
+}
+.featured--image{
+	@include span(4 of 12);
+}
+.featured--item_content{
+	@extend %product--content-placeholder;
+	@include span(8 of 12);
+}
+
+.feature:nth-child(odd){
+	background-color: lighten($saltpan, 2%);	
+	
+	img{
+		float: left;
+	}
+}
+

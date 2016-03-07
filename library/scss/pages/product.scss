@@ -1,5 +1,5 @@
 %product--content-placeholder{
-	margin-top: 150px;
+	margin-top: 3.3125em;
 	
 	@include to(2) {
 		margin-top: 3em;
@@ -10,15 +10,13 @@
 	}
 	
 	.copy{
-		line-height: 1.8;
+		line-height: 1.5em;
+		margin-bottom: 3.75em;
 	}
 }
 
 .product--image__right{
-	background-color: $white;
-	min-height: 85vh;
-	position: relative;
-
+	background-color: $saltpan;
 	
 	@include at(3, 4) {
 		min-height: 66vh;
@@ -30,16 +28,15 @@
 	
 	
 	.product--image{
-		position: absolute;
-		bottom: -6px;
-		right:0;
+		@include span(5 of 12 last);
+		margin-top: 3.75em;
 		
 		@include between(3, 4) {
 			@include span(6 of 12 last);
 			
 			img{
-				 max-height: 100%;
-				 max-width: 100%;
+				 float: right;
+			
 			}
 		}
 		
@@ -56,7 +53,8 @@
 	
 	.product--content{
 		@extend %product--content-placeholder;
-		@include span(5 of 12 first);
+		@include span(6 of 12 first);
+		@include push(1);
 		
 		@include to(2) {
 			@include span(12);
@@ -67,10 +65,9 @@
 }
 
 .product--image__left{
-	background-color: $saltpan;
-	min-height: 85vh;
-	position: relative;
-	
+
+	background-color: $white;
+
 	@include at(3, 4) {
 		min-height: 66vh;
 	}
@@ -80,9 +77,10 @@
 	}
 	
 	.product--image{
-		position: absolute;
-		bottom: -6px;
-		left:0;
+		@include span(5 of 12 first);
+		@include push(1);
+		
+		margin-top: 3.75em;
 		
 	@include between(3, 4) {
 		@include span(6 of 12 first);
@@ -106,7 +104,8 @@
 		
 	.product--content{
 		@extend %product--content-placeholder;
-		@include span(5 of 12 last);	
+		@include span(6 of 12 last);	
+		
 		
 		@include to(2) {
 			@include span(12);

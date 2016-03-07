@@ -8,15 +8,15 @@
 	@include to(2) {
 		@include span(12);			
 	}
+	
+	p{
+		line-height: 1.9em;
+		@include font-size(12px);
+	}
 }
 
 .footer--about{
 	padding-right: 20px;
-	
-	p{
-		line-height: 1.3;
-		@include font-size(12px);
-	}
 }
 
 .footer__title{
@@ -25,9 +25,6 @@
 	color: $saltpan;
 }
 
-.footer__address{
-	@include font-size(12px);
-}
 .footer__social{
 	
 	ul {
