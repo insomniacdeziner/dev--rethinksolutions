@@ -1,22 +1,37 @@
+%feature--content-placeholder{
+	margin-top: 3.3125em;
+	
+	@include to(2) {
+		margin-top: 3em;
+	}
+	
+	h2{
+		margin-top: 0;
+	}
+	
+	.copy{
+		line-height: 1.5em;
+		margin-bottom: 3.75em;
+	}
+}
+
+
 .feature{
 	padding: 3em 0 4.7em;
 }
 .featured--image--left{
-	@include span(4 of 12 first);
+	@include span(5 of 12 first);
 }
 .featured--image--right{
-	@include span(4 of 12 last);
+	@include span(5 of 12 last);
+	
 }
 
 .featured--item_content{
-	@extend %product--content-placeholder;
-	@include span(8 of 12);
+	@extend %feature--content-placeholder;
+	@include span(7 of 12);
 }
 
 .feature:nth-child(odd){
 	background-color: lighten($saltpan, 2%);	
-	
-	img{
-		float: left;
-	}
 }

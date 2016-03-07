@@ -6,8 +6,6 @@
 ****************************/
 
 .request--quote{
-	/*background-image: url('/wp-content/uploads/2016/01/footer-with-city.jpg');
-	background-size: cover;*/
 	background-color: $saltpan;
 	border-top: 2px solid $jacarta;
 	width: 100%;
@@ -25,9 +23,11 @@
 	width: span(8 of 12);
 	margin: 2em auto 4em;
 }
+.contact--quote_image{
+	@include span(6 of 12 first);
+}
 .contact--quote_email{
-	width: span(10 of 12);
-	margin: 0 auto;
+	@include span(6 of 12 last);
 }
 .ninja-forms-cont{
 	width: span(10 of 12);
@@ -35,7 +35,6 @@
 }
 
 .contact--form__input-wrap{
-	width: span(5 of 10);
 	float: left;
 }
 .ninja-forms-required-items{

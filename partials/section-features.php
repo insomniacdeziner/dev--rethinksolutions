@@ -6,7 +6,7 @@
 	<div class="wrap">
 		
 		<div class="featured--image--<?php echo $label; ?>">
-		   <img src="<?php echo $one_image['url']; ?>" alt="<?php echo $one_image['alt'] ?>" />
+		   <img class="img-responsive" src="<?php echo $one_image['url']; ?>" alt="<?php echo $one_image['alt'] ?>" />
 		</div>
 		<div class="featured--item_content">
 			<a name="section1"></a>
