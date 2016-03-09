@@ -92,7 +92,7 @@ a, a:visited {
 
 	/* on click */
 	&:active {
-
+		color: $link-hover;
 	}
 
 	/* mobile tap color */
@@ -226,7 +226,7 @@ POSTS & CONTENT STYLES
 			line-height: 0.75em;
 		}
 
-		.entry-title {}
+		.entry-title {		}
 
 		.archive-title {}
 
