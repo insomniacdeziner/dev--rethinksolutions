@@ -7,7 +7,7 @@
 		<p class="request--copy">The itamlink suite of solutions improves efficiency, saves time and money and enhances decision-making by consolidating diverse records in one powerful, web-based hub. </p>
 		
 		<div class="contact--quote_image">
-			<img src="http://placehold.it/600x350">
+			<img src="/wp-content/uploads/2016/03/request-demo-product-shot.png">
 		</div>
 		
 		<div class="contact--quote_email">

@@ -25,6 +25,8 @@
 }
 .contact--quote_image{
 	@include span(6 of 12 first);
+	position: relative;
+	bottom: -54px;
 }
 .contact--quote_email{
 	@include span(6 of 12 last);
@@ -44,6 +46,7 @@
 .field-wrap{
 	margin-bottom: 0 !important;
 }
+
 .textarea-wrap textarea{
 	height: 3em !important;
 }
@@ -53,6 +56,7 @@
 }
 .ninja-forms-form-wrap label{
 	font-weight: $normal !important;
+	@include font-size(12px);
 }
 .ninja-forms-form .label-above label{
 	margin-bottom: 0;
@@ -60,6 +64,10 @@
 
 .field-wrap{
 	margin: 4px;
+}
+
+.textarea-wrap textarea{
+	max-width: 383px;
 }
 
 @include to(3) {
