@@ -8,6 +8,7 @@
 	@include gallery(6 of 12);
 	margin-bottom: gutter(10);
 	
+	
 	&:nth-child(6n) {
 	    @include last;
 	  }
@@ -31,6 +32,7 @@
 	img{
 		width: 100%;
 		height: auto;
+		border-bottom: 3px solid $saltpan;
 	}
 }
 

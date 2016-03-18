@@ -2,8 +2,9 @@
 			<div class="careers--content">
 					
 					<div class="careers--title">
+		
 						<h3>
-							<span class="title--border"></span>	<?php the_sub_field('job_title'); ?>
+							<?php the_sub_field('job_title'); ?>
 						</h3>
 						
 					</div>

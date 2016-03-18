@@ -1,6 +1,15 @@
 .careers{
-	width: span(8);
-	margin: 0 auto;
+	@include span(6 of 12 first);
+	&:last{
+		@include span(6 of 12 last);
+	}
+	
+	&:nth-child(odd){
+		padding-left:1em;
+	}
+	&:nth-child(even){
+		padding-right:1em;
+	}
 }
 
 .careers--title{

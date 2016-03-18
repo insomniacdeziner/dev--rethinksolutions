@@ -8,7 +8,7 @@
 		<?php the_sub_field('whitepaper_description'); ?>
 	</div>
 	<div class="whitepaper--button">
-		<a href="<?php the_sub_field('whitepaper_analytics'); ?> <?php the_sub_field('whitepaper_download_link'); ?>" class="whitepaper--btn">Download</a>
+		<a href="<?php the_sub_field('whitepaper_download_link'); ?>" target="_blank" class="whitepaper--btn">Download</a>
 	</div>
 </div>
 

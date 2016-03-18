@@ -35,8 +35,6 @@
 <?php // drop Google Analytics Here ?>
 <?php // end analytics ?>
 
-
-<script src="http://files.keyes.ie/things/baseliner/baseliner-latest.min.js">
 </script>
 <script>
 window.onload = function() {

@@ -8,13 +8,14 @@ Stylesheet: Nav
 }
 
 .nav--primary{
-	background-color: $saltpan;
+	background-color: $white;
 }
 
 .logo{
 	@include span(3 of 12);
 	padding-top: 12px;
 	display: block;
+	margin: 8px 0;
 		
 	@include to(1) {
 		width: span(full);
@@ -52,6 +53,12 @@ Stylesheet: Nav
 	}
 }
 
+.phone--number a{
+	cursor: default;
+	&:hover, &:focus{
+		color:#3f5c6d !important;
+	}
+}
 .nav {
 	border-bottom: 0;
 	margin: 10px 0;
@@ -152,4 +159,6 @@ Stylesheet: Nav
 	color: $downy;
 }
 
-
+.request-demo-nav{
+	margin-top:10px !important;
+}

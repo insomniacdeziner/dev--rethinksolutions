@@ -1,37 +1,32 @@
-%feature--content-placeholder{
-	margin-top: 3.3125em;
+.icons{
+	display: block;
+	margin-bottom: 2em;
+	overflow: hidden;
+}
+
+.icon{
+	@include gallery(span 3 of 12);
+	text-align: center;
+	margin-bottom: 0.75em;
 	
-	@include to(2) {
-		margin-top: 3em;
+	.fa{
+		color: $downy;
+		padding: 0.5em 0;
 	}
 	
-	h2{
-		margin-top: 0;
+	.circle{
+		background-color: $saltpan;
+		-moz-border-radius: 50px; 
+		-webkit-border-radius: 50px; 
+		border-radius: 50px;
+		width: 100px;
+		height: 100px;
+		margin: 0 auto;
+		display: block;
+		margin-bottom: 0.75em;
 	}
-	
-	.copy{
-		line-height: 1.5em;
-		margin-bottom: 3.75em;
-	}
 }
 
-
-.feature{
-	padding: 3em 0 4.7em;
-}
-.featured--image--left{
-	@include span(5 of 12 first);
-}
-.featured--image--right{
-	@include span(5 of 12 last);
-	
-}
-
-.featured--item_content{
-	@extend %feature--content-placeholder;
-	@include span(7 of 12);
-}
-
-.feature:nth-child(odd){
-	background-color: lighten($saltpan, 2%);	
+.icon--text{
+	font-weight: $semi-bold;
 }

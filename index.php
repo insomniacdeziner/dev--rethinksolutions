@@ -3,9 +3,11 @@
 <img class="background--image_partial" src="/wp-content/uploads/2016/01/banner-blog.jpg">
 <div class="wrap">
   <main id="main" class="blog" role="main" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/Blog">
-    <?php get_template_part('partials/section', 'page-title'); ?>
+
     <?php include(get_query_template('partials/section', 'banner')); ?>
-    <?php get_template_part('partials/section', 'section-nav-blog'); ?>
+      <?php get_template_part('partials/section', 'section-nav-blog'); ?>
+    <?php get_template_part('partials/section', 'page-title'); ?>
+ 
     <?php get_template_part('partials/section', 'featured-blog'); ?>
     <div class="blog--wrap">
       <?php $the_query = new WP_Query( 'posts_per_page=5' ); ?>

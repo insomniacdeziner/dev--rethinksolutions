@@ -1,5 +1,5 @@
 <div id="sidebar1" class="sidebar" role="complementary">
-	<?php get_template_part('partials/section', 'whitepaper-download'); ?> 	
+<?php // get_template_part('partials/section', 'whitepaper-download'); ?> 	
 	
 	
 	<?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>

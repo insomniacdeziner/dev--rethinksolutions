@@ -5,7 +5,7 @@
 }
  
 .blog .sidebar{
-	margin-top: 1.5em;
+	margin-top: 0.5em;
 	@include to(2) {
 		clear: both;
 	}	
@@ -63,5 +63,11 @@
 		width: 87%;
 	}	
 		
+	}
+	
+	.btn__green{
+		padding: 1px 11px;
+		line-height: 20px;
+	
 	}
 }

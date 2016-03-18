@@ -1,5 +1,5 @@
 .blog{
-
+padding: 0 !important;
 	@include at(4) {
 		margin-bottom: 2em;
 	}
@@ -26,7 +26,10 @@
 	}
 }
 
-.entry-title > a{
+.single-title, .entry-title{
+	@include font-size(24px);
+	
+	> a{
 		font-weight: $bold;
 		margin-bottom: 0.75em;
 		display: block;
@@ -38,6 +41,9 @@
 			color: $downy;
 		}	
 }
+
+}
+
 
 .blog--featured__content{
 	@include span(6 of 12 last);
@@ -64,12 +70,16 @@
 }
 
 	.excerpt-read-more{
-		color: $downy;
 	     margin-top: 25px;
-	      
+	     color: $saltpan;
+	     font-weight: $semi-bold;
+	     
+	      &:visited{
+		     color: $saltpan;
+	     }
 		  &:hover,
 		  &:focus {
-			color: $white;
+			color: $saltpan;
 		    background-color: darken($jacarta, 4%);
 		    border: 2px solid $jacarta;
 		  } 
@@ -87,8 +97,8 @@
 	background-color:lighten($saltpan, 3%);
 	
 	a{
-		color: $jacarta;
-		@include font-size(12px);
+		  color: $saltpan;		
+		  @include font-size(12px);
 		font-weight: $light;
 		text-transform: uppercase;
 		
@@ -208,7 +218,9 @@
 	color: $sirocco;
 	text-transform: uppercase;
 	font-weight: $semi-bold;
-	@include font-size(10px);	
+	@include font-size(10px);
+	margin-bottom: 1em;
+	display: block;	
 }
 
 

@@ -1,0 +1,59 @@
+.service{
+	padding: 3em 0 4.7em;
+}
+.service--image--left{
+	@include span(5 of 12 first);
+	
+	@include to(4) {
+		@include span(6 of 12 last);
+		margin-right: 1em;	
+	}
+}
+.service--image--right{
+	@include span(5 of 12 last);
+	
+	@include to(4) {
+		@include span(6 of 12 last);	
+		margin-left: 1em;
+	}
+	
+}
+
+.service--item_content{
+	margin-top: 3.3125em;
+	
+	
+	h2{
+		margin-top: 0;
+	}
+	
+	.copy{
+		line-height: 1.5em;
+		margin-bottom: 3.75em;
+	}
+	
+	@include to(2) {
+		margin-top: 3em;
+	}
+	
+	@include span(7 of 12);
+	
+	@include to(4) {
+		@include span(6 of 12 last);	
+	}
+	
+}
+
+.service:nth-child(odd){
+	background-color: lighten($saltpan, 2%);	
+}
+.service:nth-child(even){
+	.service--item_content{
+		padding-left: 1em;	
+	}
+}
+
+.img-responsive{
+	width: 100%;
+	height: auto;
+}
