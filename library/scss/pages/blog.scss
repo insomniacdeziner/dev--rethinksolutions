@@ -1,5 +1,5 @@
 .blog{
-padding: 0 !important;
+
 	@include at(4) {
 		margin-bottom: 2em;
 	}
@@ -66,23 +66,20 @@ padding: 0 !important;
 	@include to(2) {
 		@include span(12);
 	} 
-
+	
+	.blog--wrap__post:first-of-type{
+		display: none;
+	}
 }
 
-	.excerpt-read-more{
-	     margin-top: 25px;
+.excerpt-read-more{
+     margin-top: 25px;
+     color: $saltpan;
+     font-weight: $semi-bold;
+     
+      &:visited{
 	     color: $saltpan;
-	     font-weight: $semi-bold;
-	     
-	      &:visited{
-		     color: $saltpan;
-	     }
-		  &:hover,
-		  &:focus {
-			color: $saltpan;
-		    background-color: darken($jacarta, 4%);
-		    border: 2px solid $jacarta;
-		  } 
+     }
 }
 .blog--wrap__post{
 	    margin-bottom: 45px;
@@ -200,7 +197,7 @@ padding: 0 !important;
 	margin: 0 auto;
 	
 	.article-header{
-		margin-bottom: 40px;
+		margin-bottom: 5em;
 	}
 	
 	.entry-content{
@@ -210,7 +207,7 @@ padding: 0 !important;
 	.article-footer{
 		border-top: 6px solid $saltpan;
 		padding: 30px 10px 50px;
-		margin-top: 30px;
+		margin-top: 5em;
 	}
 }
 

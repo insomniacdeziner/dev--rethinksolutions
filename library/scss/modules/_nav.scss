@@ -137,13 +137,15 @@ Stylesheet: Nav
 	  	
 	  	
 	  	.request-demo-btn {
-		  	width: span(12);
+		  	width: span(5);
+		  	float: left;
 		 }
 	  	.signin-btn{
-		  	width: span(12);
+		  	width: span(5);
 		  	text-align: center;
 		  	border: 1px solid $text-color;
 		  	margin: 5px 0 10px;
+		  	float: left;
 	  	}
 	  	
 	}
@@ -160,5 +162,5 @@ Stylesheet: Nav
 }
 
 .request-demo-nav{
-	margin-top:10px !important;
+	margin: 10px 0 0 10px !important;
 }

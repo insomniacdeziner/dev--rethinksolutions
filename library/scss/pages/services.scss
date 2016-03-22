@@ -8,6 +8,14 @@
 		@include span(6 of 12 last);
 		margin-right: 1em;	
 	}
+	@include to(2) {
+		@include span(12);
+		
+		img{
+			text-align: center;
+		}
+	}
+
 }
 .service--image--right{
 	@include span(5 of 12 last);
@@ -16,6 +24,14 @@
 		@include span(6 of 12 last);	
 		margin-left: 1em;
 	}
+	@include to(2) {
+		@include span(12);
+		
+		img{
+			text-align: center;
+		}
+	}
+
 	
 }
 
@@ -32,15 +48,19 @@
 		margin-bottom: 3.75em;
 	}
 	
-	@include to(2) {
-		margin-top: 3em;
-	}
-	
+		
 	@include span(7 of 12);
 	
-	@include to(4) {
+	@include at(4) {
 		@include span(6 of 12 last);	
 	}
+	
+	@include to(2) {
+		@include span(12);
+		margin-top: 3em;
+	}
+
+	
 	
 }
 

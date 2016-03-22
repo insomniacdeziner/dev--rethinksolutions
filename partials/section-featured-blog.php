@@ -1,5 +1,12 @@
 <div class="blog--featured">
-	 <?php the_post(); //this will get the first post, and generate all the tags the_title(), the_permalink(),... ?>  
+	
+	 <?php $args = array(
+			'posts_per_page' => 1,
+			'post__in'  => get_option( 'sticky_posts' ),
+			'ignore_sticky_posts' => 1
+		);
+		$query = new WP_Query( $args );
+?>  
 	<div class="blog--featured__image">  
 			   <?php the_post_thumbnail( 'bones-thumb-featured' ); ?>
 	</div>

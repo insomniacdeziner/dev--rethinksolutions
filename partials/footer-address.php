@@ -8,7 +8,7 @@
 	     <span itemprop="postalCode">M2N 6K1</span><br><br>
 	   
 	  <span itemprop="telephone">416-224-8354</span><br>
-	  <span itemprop="telephone">1-877-454-iTAM (4826)</span></div>
+	  <span itemprop="telephone">1-877-454-itam (4826)</span></div>
 	  </p>
 	</div>		
 </section>

@@ -1,7 +1,9 @@
 /******************************************************************
 Theme Name: Rethink Solutions
 Theme URI: http://www.themble.com/bones
-Description: This site was built using the Bones Development Theme...with a few addtions. The bones grid was replaced with Susy all Media Queires are managed by Breakpoint and Breakpoint Slicer. Do not edit the CSS files -- edit the .scss files and compile.
+Description: This site was built using the Bones Development Theme. 
+-------
+The bones grid was replaced with Susy all Media Queires are managed by Breakpoint and Breakpoint Slicer. DO NOT EDIT the CSS files -- use the .scss files and compile the sass. 
 
 Author: Michelle Andrews
 Author URI: http://www.insomniacdeziner.com

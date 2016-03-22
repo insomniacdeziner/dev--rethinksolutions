@@ -1,11 +1,11 @@
-<section class="careers">	
+<section class="careers page-content">	
 			<div class="careers--content">
 					
 					<div class="careers--title">
 		
-						<h3>
+						<b>
 							<?php the_sub_field('job_title'); ?>
-						</h3>
+						</b>
 						
 					</div>
 					<div class="careers--description">

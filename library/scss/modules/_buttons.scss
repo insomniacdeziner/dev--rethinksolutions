@@ -59,20 +59,6 @@ An example button.
 You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
-.blue-btn {
-  @extend %btn; // here we load the btn defaults
-  background-color: $jacarta;
-
-  &:hover,
-  &:focus {
-    background-color: darken($jacarta, 4%);
-  } // end hover
-
-  &:active {
-    background-color: darken($jacarta, 5%);
-  } // end active
-
-} // end blue button
 
 
 .btn__green{
@@ -83,15 +69,15 @@ and it will create a button dependant on those variables.
   
   &:hover,
   &:focus {
-    background-color: $saltpan;
+     background-color: darken($downy, 10%);
     border: 2px solid darken($downy, 12%);
-    color: $jacarta;
+    color: $saltpan;
   } 
 
   &:active {
     background-color: darken($downy, 10%);
     border: 2px solid darken($downy, 12%);
-    color: $jacarta;
+    color: $saltpan;
   } 
 
 } 
@@ -107,18 +93,7 @@ and it will create a button dependant on those variables.
   border: 2px solid $downy;
   background-color: transparent;
   text-transform: uppercase;
-  
-  &:hover,
-  &:focus {
-    background-color: darken($jacarta, 4%);
-    border: 1px solid $jacarta;
-  } 
-
-  &:active {
-    background-color: darken($jacarta, 5%);
-    border: 1px solid $jacarta;
-  } 
-
+ 
 } 
 
 .btn__link{
@@ -127,12 +102,6 @@ and it will create a button dependant on those variables.
   border: none;
   background-color: transparent;
   text-transform: uppercase;
-  
-  &:hover,
-  &:focus {
-    color: darken($jacarta, 4%);
-	background-color: transparent
-  } 
 
 }
 
@@ -169,11 +138,4 @@ and it will create a button dependant on those variables.
 	margin-top: 0.75em;
 	padding: 2px 0.75em;
 	line-height: 25px;
-	
-	 &:hover,
-	 &:focus {
-	    background-color: $saltpan;
-	    border: 2px solid darken($downy, 12%);
-	    color: $jacarta;
-  	} 
 }

@@ -158,7 +158,7 @@ HEADER STYLES
 .article-header{
 	font-weight: $semi-bold;
 	@include font-size(14px);
-	margin: 10px 0 18px;
+	margin: 2em 0 4em;
 
 	#breadcrumbs{
 		border-top: 1px dotted $saltpan;
@@ -675,7 +675,7 @@ COMMENT STYLES
 
 	/* comment reply link */
 	.comment-reply-link {
-		@extend .blue-btn;
+		@extend .btn;
 		font-size: 0.9em;
 		float: right;
 
@@ -731,7 +731,7 @@ COMMENT FORM STYLES
 
 	/* comment submit button */
 	#submit {
-		@extend .blue-btn;
+		@extend .btn;
 		float: right;
 		font-size: 1em;
 	}
